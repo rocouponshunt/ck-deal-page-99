@@ -399,21 +399,29 @@ function dhBuildTrackingUrl(linkurl,productUrl){
 
 /* ── FETCH ── */
 async function dhFetch(){
-  const res=await fetch(EDGE_LIVE);
-  const data=await res.json();
-  DH_TIMER=data.global_timer_hours||12;
-  DH_ROT_MS=data.image_rotation_ms||2000;
-  DH_CAT_ORDER=data.category_order||[];
-  if(data.tracking_template)DH_TRACKING_TPL=data.tracking_template;
-  const mobileCols=parseInt(data.mobile_grid_cols)||2;
-  document.documentElement.style.setProperty('--mobile-cols',mobileCols);
-  DH_ALL=(data.deals||[]).filter(d=>d.status==='live'&&d.hidden!==true).map(d=>({
-    ...d,
-    image_urls:dhParseArr(d.image_urls),
-    image_order:dhParseArr(d.image_order),
-    hidden_images:dhParseArr(d.hidden_images),
-    retailer_rates:dhParseArr(d.retailer_rates)
-  }));
+  const ctrl=new AbortController();
+  const fetchTimer=setTimeout(()=>ctrl.abort(),8000);
+  try{
+    const res=await fetch(EDGE_LIVE,{signal:ctrl.signal});
+    clearTimeout(fetchTimer);
+    const data=await res.json();
+    DH_TIMER=data.global_timer_hours||12;
+    DH_ROT_MS=data.image_rotation_ms||2000;
+    DH_CAT_ORDER=data.category_order||[];
+    if(data.tracking_template)DH_TRACKING_TPL=data.tracking_template;
+    const mobileCols=parseInt(data.mobile_grid_cols)||2;
+    document.documentElement.style.setProperty('--mobile-cols',mobileCols);
+    DH_ALL=(data.deals||[]).filter(d=>d.status==='live'&&d.hidden!==true).map(d=>({
+      ...d,
+      image_urls:dhParseArr(d.image_urls),
+      image_order:dhParseArr(d.image_order),
+      hidden_images:dhParseArr(d.hidden_images),
+      retailer_rates:dhParseArr(d.retailer_rates)
+    }));
+  }catch(fe){
+    clearTimeout(fetchTimer);
+    console.error('Fetch failed or timed out:',fe);
+  }
 }
 
 /* ── SIDEBAR ── */
@@ -817,15 +825,22 @@ function dhHandleHash(){
 window.addEventListener('hashchange',dhHandleHash);
 
 /* ── BOOT ── */
+function dhHideLoader(){var l=document.getElementById('dhLoader');if(l)l.style.display='none';}
+
 (async()=>{
   dhShowSkeletons();
   document.getElementById('dhListingPage').style.display='block';
-  try{await dhFetch();}catch(e){console.error('Failed to load deals',e);}
+  /* Safety net: always hide loader after 10s regardless */
+  var loaderKill=setTimeout(dhHideLoader,10000);
+  try{await dhFetch();}catch(e){console.error('Boot error:',e);}
+  clearTimeout(loaderKill);
   dhHideSkeletons();
-  dhBuildSidebar();
-  dhRenderDeals();
-  document.getElementById('dhLoader').style.display='none';
-  if(dhPendingId){dhShowDetail(dhPendingId);dhPendingId=null;}
-  else dhHandleHash();
+  try{dhBuildSidebar();}catch(e){console.error('Sidebar error:',e);}
+  try{dhRenderDeals();}catch(e){console.error('Render error:',e);}
+  dhHideLoader();
+  try{
+    if(dhPendingId){dhShowDetail(dhPendingId);dhPendingId=null;}
+    else dhHandleHash();
+  }catch(e){console.error('Routing error:',e);}
 })();
 </script>
