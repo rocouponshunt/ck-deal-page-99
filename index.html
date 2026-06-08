@@ -354,7 +354,7 @@ body,input,button{font-family:'Metropolis',sans-serif !important}
 </div>
 
 <script>
-const EDGE_LIVE='https://bdztgellimsbglxiuwcq.supabase.co/functions/v1/get-live-deals';
+const GS_DEALS_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vSVZaZoYhwPwGtSvqR85X2_s8arib9L2ca7GxJp31OHOcykNKIPWhaShdhq_SNbIPW4020SF2WPvagn/pub?output=csv';
 let DH_ALL=[],DH_TIMER=12,DH_ROT_MS=2000,DH_CAT_ORDER=[];
 let DH_TRACKING_TPL='{linkurl}&source=TEST{random10}&p5={userid}&url={product_url}';
 const DH_FIXED_UID='17861557';
@@ -397,30 +397,88 @@ function dhBuildTrackingUrl(linkurl,productUrl){
   return DH_TRACKING_TPL.replace('{linkurl}',linkurl||'#').replace('{random10}',r).replace('{userid}',DH_FIXED_UID).replace('{product_url}',encodeURIComponent(productUrl||''));
 }
 
-/* ── FETCH ── */
+/* ── CSV PARSER ── */
+function dhParseCSV(text){
+  const lines=text.trim().split('\n');
+  if(lines.length<2)return[];
+  const headers=lines[0].split(',').map(h=>h.trim().replace(/^"|"$/g,''));
+  return lines.slice(1).map(line=>{
+    const cols=[];
+    let cur='',inQ=false;
+    for(let i=0;i<line.length;i++){
+      const ch=line[i];
+      if(ch==='"'&&!inQ&&(i===0||line[i-1]===',')){inQ=true;}
+      else if(ch==='"'&&inQ&&(i+1>=line.length||line[i+1]===',')){inQ=false;}
+      else if(ch===','&&!inQ){cols.push(cur);cur='';}
+      else{cur+=ch;}
+    }
+    cols.push(cur);
+    const row={};
+    headers.forEach((h,i)=>{
+      let val=(cols[i]||'').trim().replace(/^"|"$/g,'');
+      row[h]=val;
+    });
+    return row;
+  });
+}
+
+function dhCoerceRow(r){
+  /* Convert string values from CSV to correct types */
+  const nums=['mrp','discounted_price','final_deal_price','discount_percent',
+    'deal_order','timer_hours','shipping_fee','coupon_discount',
+    'prepaid_discount_override','cashback_override','expected_confirmation_days',
+    'b1_new_cashback','b1_existing_cashback'];
+  const bools=['hidden','availability','price_dropped'];
+  nums.forEach(k=>{if(r[k]!==undefined&&r[k]!=='')r[k]=parseFloat(r[k])||0;});
+  bools.forEach(k=>{if(r[k]!==undefined)r[k]=String(r[k]).toLowerCase()==='true';});
+  /* status: sheet stores 'live' or 'TRUE'/'true' */
+  if(r.status!==undefined){
+    const s=String(r.status).toLowerCase();
+    r.status=(s==='live'||s==='true')?'live':s;
+  }
+  /* image_urls: parse JSON array or single URL */
+  r.image_urls=dhParseArr(r.image_urls);
+  r.image_order=dhParseArr(r.image_order||'[]');
+  r.hidden_images=dhParseArr(r.hidden_images||'[]');
+  r.retailer_rates=dhParseArr(r.retailer_rates||'[]');
+  /* ck_admin_stores shim — code expects deal.ck_admin_stores for store fields */
+  r.ck_admin_stores={
+    store_type:r.store_type||'Cashback',
+    cashback:parseFloat(r.cashback_override)||0,
+    cashback_type:r.cashback_type||'percent',
+    cashback_tc:r.cashback_tc||'',
+    tracking_speed:r.tracking_speed||'—',
+    expected_confirmation_days:r.expected_confirmation_days||'—',
+    shipping_fee:parseFloat(r.shipping_fee)||0,
+    shipping_rule:r.shipping_rule||'yes',
+    linkurl:r.linkurl||'#',
+    groupid:r.groupid||'A'
+  };
+  return r;
+}
+
+/* ── FETCH FROM GOOGLE SHEETS CSV ── */
 async function dhFetch(){
   const ctrl=new AbortController();
-  const fetchTimer=setTimeout(()=>ctrl.abort(),8000);
+  const fetchTimer=setTimeout(()=>ctrl.abort(),10000);
   try{
-    const res=await fetch(EDGE_LIVE,{signal:ctrl.signal});
+    const res=await fetch(GS_DEALS_URL,{signal:ctrl.signal});
     clearTimeout(fetchTimer);
-    const data=await res.json();
-    DH_TIMER=data.global_timer_hours||12;
-    DH_ROT_MS=data.image_rotation_ms||2000;
-    DH_CAT_ORDER=data.category_order||[];
-    if(data.tracking_template)DH_TRACKING_TPL=data.tracking_template;
-    const mobileCols=parseInt(data.mobile_grid_cols)||2;
-    document.documentElement.style.setProperty('--mobile-cols',mobileCols);
-    DH_ALL=(data.deals||[]).filter(d=>d.status==='live'&&d.hidden!==true).map(d=>({
-      ...d,
-      image_urls:dhParseArr(d.image_urls),
-      image_order:dhParseArr(d.image_order),
-      hidden_images:dhParseArr(d.hidden_images),
-      retailer_rates:dhParseArr(d.retailer_rates)
-    }));
+    const text=await res.text();
+    const rows=dhParseCSV(text);
+    DH_ALL=rows
+      .map(dhCoerceRow)
+      .filter(d=>(d.status==='live'||d.status===true)&&d.hidden!==true);
+    /* derive category order from deal_order sorted unique categories */
+    const catMap={};
+    DH_ALL.forEach(d=>{
+      if(d.category&&!(d.category in catMap))catMap[d.category]=d.deal_order||999;
+    });
+    DH_CAT_ORDER=Object.entries(catMap).sort((a,b)=>a[1]-b[1]).map(e=>e[0]);
+    document.documentElement.style.setProperty('--mobile-cols',2);
   }catch(fe){
     clearTimeout(fetchTimer);
-    console.error('Fetch failed or timed out:',fe);
+    console.error('Google Sheets fetch failed:',fe);
   }
 }
 
