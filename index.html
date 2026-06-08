@@ -1,1267 +1,831 @@
 <style>
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Regular-1706697147.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Medium-1706697129.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-SemiBold-1706697165.otf') format('opentype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Bold-1706697037.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ExtraBold-1706697055.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'Metropolis';src:url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Black-1706697003.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap}
 
-@font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Thin-1706697197.otf') format('opentype');
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ThinItalic-1706697206.otf') format('opentype');
-        font-weight: 100;
-        font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ExtraLight-1706697077.otf') format('opentype');
-        font-weight: 200;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ExtraLightItalic-1706697115.otf') format('opentype');
-        font-weight: 200;
-        font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Light-1706697397.otf') format('opentype');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-LightItalic-1706697087.otf') format('opentype');
-        font-weight: 300;
-        font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Regular-1706697147.otf') format('opentype');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-	  
-	        @font-face {
-        font-family: 'LilitaOne';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/LilitaOne-Regular-1757593827.ttf') format('opentype');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-	  
-	  	        @font-face {
-        font-family: 'Poppins';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Poppins-Regular-1757593875.ttf') format('opentype');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-	  
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-RegularItalic-1706697156.otf') format('opentype');
-        font-weight: 400;
-        font-style: italic;
-        font-display: swap;
-      }  
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Medium-1706697129.otf') format('opentype');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-MediumItalic-1706697138.otf') format('opentype');
-        font-weight: 500;
-        font-style: italic;
-        font-display: swap;
-      }    
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-SemiBold-1706697165.otf') format('opentype');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-      } 
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-SemiBoldItalic-1706697178.otf') format('opentype');
-        font-weight: 600;
-        font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Bold-1706697037.otf') format('opentype');
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-BoldItalic-1706697045.otf') format('opentype');
-        font-weight: 700;
-        font-style: italic;
-        font-display: swap;
-      }    
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ExtraBold-1706697055.otf') format('opentype');
-        font-weight: 800;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-ExtraBoldItalic-1706697067.otf') format('opentype');
-        font-weight: 800;
-        font-style: italic;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-Black-1706697003.otf') format('opentype');
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Metropolis';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/Metropolis-BlackItalic-1706697013.otf') format('opentype');
-        font-weight: 900;
-        font-style: italic;
-        font-display: swap;
-      } 
-        @font-face {
-        font-family: 'Yeseva One';
-        src: url('https://asset22.ckassets.com/resources/image/staticpage_images/YesevaOne-Regular-1734416658.ttf') format('opentype');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      } 
-	  
-body, input, select, textarea, button{
-    font-family: "Metropolis", Metropolis !important;
+body,input,button{font-family:'Metropolis',sans-serif !important}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* ── VARIABLES ── */
+.dh-root{
+  --bg:#f5f5f7;--bg2:#fff;--bg3:#f0f0f4;--bg4:#e8e8ef;
+  --border:#e0e0ea;--border2:#d0d0de;
+  --accent:#5c2be2;--accent2:#7b52f0;--accent-light:#ede8fc;
+  --orange:#ff6b2b;--green:#00a86b;--green-bg:#e6f7f1;
+  --red:#e53e3e;--red-bg:#fef2f2;
+  --text:#111118;--text2:#555566;--text3:#9898aa;
+  --radius:16px;
+  --card-w:200px;
+  --shadow:0 2px 12px rgba(0,0,0,.07);
+  --shadow-hover:0 8px 32px rgba(92,43,226,.13);
 }
 
-/* MAIN WRAPPER */
+/* ── LOADER ── */
+.dh-loader{position:fixed;inset:0;background:#fff;z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.dh-loader-logo{font-size:28px;font-weight:800;letter-spacing:-1px;color:#111118}
+.dh-loader-logo span{color:#5c2be2}
+.dh-loader-bar{width:180px;height:3px;background:#f0f0f4;border-radius:2px;overflow:hidden}
+.dh-loader-fill{height:100%;background:#5c2be2;border-radius:2px;animation:dhloadfill 1.2s ease-out forwards}
+@keyframes dhloadfill{from{width:0}to{width:100%}}
+.dh-loader-text{font-size:12px;color:#9898aa}
 
-.main-wrapper {
-    max-width: 100%;
-    margin: auto;
+/* ── TOP NAV ── */
+.dh-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid #e0e0ea;padding:0 16px}
+.dh-nav-inner{max-width:1400px;margin:0 auto;height:56px;display:flex;align-items:center;gap:12px}
+.dh-logo{font-size:20px;font-weight:800;letter-spacing:-.5px;flex-shrink:0;text-decoration:none;color:#111118;cursor:pointer}
+.dh-logo span{color:#5c2be2}
+.dh-search-wrap{flex:1;max-width:420px;position:relative}
+.dh-search{width:100%;background:#f0f0f4;border:1.5px solid #e0e0ea;color:#111118;padding:9px 14px 9px 38px;border-radius:11px;font-family:'Metropolis',sans-serif;font-size:13px;outline:none}
+.dh-search:focus{border-color:#5c2be2;background:#fff}
+.dh-search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:#9898aa;font-size:13px;pointer-events:none}
+.dh-suggestions{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1.5px solid #e0e0ea;border-radius:13px;overflow:hidden;z-index:200;display:none;box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.dh-sug-item{display:flex;align-items:center;gap:10px;padding:10px 13px;cursor:pointer;border-bottom:1px solid #e0e0ea}
+.dh-sug-item:last-child{border-bottom:none}
+.dh-sug-img-wrap{width:38px;height:38px;border-radius:7px;overflow:hidden;background:#f0f0f4;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.dh-sug-img{width:100%;height:100%;object-fit:contain}
+.dh-sug-info{flex:1;min-width:0}
+.dh-sug-name{font-size:12px;font-weight:600;color:#111118;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dh-sug-price{font-size:11px;color:#555566;margin-top:1px}
+.dh-sug-badge{background:#ede8fc;color:#5c2be2;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap;flex-shrink:0}
 
-}
+/* ── CAT PILLS BAR ── */
+.dh-catbar{background:#fff;border-bottom:1px solid #e0e0ea;padding:0 16px;position:sticky;top:56px;z-index:90;overflow:hidden}
+.dh-catbar-inner{display:flex;align-items:center;gap:8px;height:46px;overflow-x:auto;scrollbar-width:none}
+.dh-catbar-inner::-webkit-scrollbar{display:none}
+.dh-cat-pill{flex-shrink:0;background:transparent;border:1.5px solid #e0e0ea;color:#555566;padding:4px 13px;border-radius:20px;cursor:pointer;font-family:'Metropolis',sans-serif;font-size:12px;font-weight:600;white-space:nowrap}
+.dh-cat-pill.active{background:#5c2be2;border-color:#5c2be2;color:#fff}
 
-/* TOP BLUE AREA */
+/* ── SORT PILLS ── */
+.dh-sort-bar{background:#fff;border-bottom:1px solid #e0e0ea;padding:0 16px;position:sticky;top:102px;z-index:89;overflow:hidden}
+.dh-sort-inner{display:flex;align-items:center;gap:8px;height:40px;overflow-x:auto;scrollbar-width:none}
+.dh-sort-inner::-webkit-scrollbar{display:none}
+.dh-sort-label{font-size:11px;color:#9898aa;font-weight:600;flex-shrink:0}
+.dh-sort-pill{flex-shrink:0;background:#f0f0f4;border:1.5px solid #e0e0ea;color:#555566;padding:3px 11px;border-radius:20px;cursor:pointer;font-family:'Metropolis',sans-serif;font-size:11px;font-weight:600;white-space:nowrap}
+.dh-sort-pill.active{background:#5c2be2;border-color:#5c2be2;color:#fff}
+.dh-sort-sep{width:1px;height:16px;background:#e0e0ea;flex-shrink:0}
+.dh-price-filter{display:flex;align-items:center;gap:5px;flex-shrink:0}
+.dh-price-lbl{font-size:11px;color:#9898aa;flex-shrink:0}
+.dh-price-input{width:68px;background:#f0f0f4;border:1.5px solid #e0e0ea;color:#111118;padding:3px 7px;border-radius:8px;font-family:'Metropolis',sans-serif;font-size:11px;outline:none}
+.dh-price-input:focus{border-color:#5c2be2}
 
-.top-section {
-    /* background: #0047ff; */
-    padding: 20px 6px 18px;
-    /* border-radius: 28px 28px 0 0; */
-    float: left;
-    width: 100%;
-}
-/* MAIN CATEGORY TABS */
+/* ── PAGE BODY ── */
+.dh-page-body{max-width:1400px;margin:0 auto;padding:20px 16px 60px;display:flex;gap:20px;align-items:flex-start}
 
-.tabs{
-  display:flex;
-  gap:10px;
-  overflow-x:auto;
-}
+/* ── SIDEBAR ── */
+.dh-sidebar{width:210px;flex-shrink:0;position:sticky;top:156px;max-height:calc(100vh - 170px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:#e0e0ea transparent}
+.dh-sidebar::-webkit-scrollbar{width:4px}
+.dh-sidebar::-webkit-scrollbar-thumb{background:#e0e0ea;border-radius:4px}
+.dh-sidebar-box{background:#fff;border:1.5px solid #e0e0ea;border-radius:14px;padding:14px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.dh-sidebar-title{font-size:12px;font-weight:700;color:#111118;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.dh-sidebar-clear{font-size:11px;color:#5c2be2;cursor:pointer;font-weight:600;display:none}
+.dh-brand-search{width:100%;background:#f0f0f4;border:1.5px solid #e0e0ea;color:#111118;padding:6px 9px;border-radius:8px;font-family:'Metropolis',sans-serif;font-size:12px;outline:none;margin-bottom:8px}
+.dh-brand-search:focus{border-color:#5c2be2}
+.dh-brand-list{display:flex;flex-direction:column;gap:3px;max-height:260px;overflow-y:auto;scrollbar-width:thin}
+.dh-brand-list::-webkit-scrollbar{width:3px}
+.dh-brand-list::-webkit-scrollbar-thumb{background:#e0e0ea;border-radius:3px}
+.dh-brand-item{display:flex;align-items:center;gap:8px;padding:5px 4px;cursor:pointer;border-radius:7px}
+.dh-brand-cb{width:16px;height:16px;border:2px solid #d0d0de;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:transparent}
+.dh-brand-cb.checked{background:#5c2be2;border-color:#5c2be2;color:#fff}
+.dh-brand-name{font-size:12px;color:#555566;flex:1}
+.dh-brand-count{font-size:10px;color:#9898aa;background:#f0f0f4;padding:1px 6px;border-radius:10px}
 
-.tabs::-webkit-scrollbar{
-  display:none;
-}
+/* ── CONTENT AREA ── */
+.dh-content-area{flex:1;min-width:0}
+.dh-results-header{display:none;align-items:center;justify-content:space-between;margin-bottom:16px}
+.dh-results-count{font-size:13px;color:#555566}
+.dh-results-count strong{color:#111118;font-weight:600}
 
-.tab {
-    min-width: 23%;
-    background: #fff;
-    border-radius: 12px;
-    padding: 5px;
-    cursor: pointer;
-    /* transition: 0.3s; */
-    border: 4px solid transparent;
-    /* flex-shrink: 0; */
-    height: 55px;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative;
-    top: 2px;
-}
+/* ── DEAL GRID ── */
+.dh-deal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--card-w),1fr));gap:14px}
 
-.tab.active {
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-color: #cbd6ff;
-    border-left-color: #cbd6ff;
-    border-right-color: #cbd6ff;
-    height: 66px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+/* ── DEAL CARD ── */
+.dh-deal-card{background:#fff;border:1.5px solid #e0e0ea;border-radius:16px;overflow:hidden;cursor:pointer;position:relative;display:flex;flex-direction:column;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.dh-deal-card.oos{opacity:.55}
+.dh-card-img-wrap{position:relative;aspect-ratio:1;background:#f0f0f4;overflow:hidden}
+.dh-card-img{width:100%;height:100%;object-fit:contain;padding:10px;background:#fff}
+.dh-card-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:36px;color:#9898aa;background:#f0f0f4}
+.dh-card-disc-badge{position:absolute;top:8px;left:8px;background:#5c2be2;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;z-index:2}
+.dh-card-oos-overlay{position:absolute;inset:0;background:rgba(245,245,247,.8);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#555566}
+.dh-card-viewing{position:absolute;bottom:7px;left:7px;background:rgba(0,0,0,.55);color:#fff;font-size:10px;font-weight:500;padding:2px 7px;border-radius:20px;display:flex;align-items:center;gap:4px}
+.dh-card-viewing-dot{width:5px;height:5px;border-radius:50%;background:#4ade80;animation:dhblink 1.4s infinite}
+@keyframes dhblink{0%,100%{opacity:1}50%{opacity:.3}}
+.dh-price-drop-ribbon{position:absolute;top:0;right:0;background:#e53e3e;color:#fff;font-size:9px;font-weight:700;padding:3px 8px;border-bottom-left-radius:8px;letter-spacing:.4px;z-index:3}
+.dh-card-body{padding:11px;flex:1;display:flex;flex-direction:column;gap:3px}
+.dh-card-retailer{font-size:10px;color:#9898aa;text-transform:uppercase;letter-spacing:.7px;font-weight:600}
+.dh-card-name{font-size:12px;font-weight:600;line-height:1.4;color:#111118;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.dh-card-prices{display:flex;align-items:baseline;gap:6px;margin-top:4px}
+.dh-card-mrp{text-decoration:line-through;font-size:11px;color:#9898aa}
+.dh-card-price{font-size:18px;font-weight:800;color:#111118;letter-spacing:-.5px}
+.dh-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:6px;padding-top:7px;border-top:1px solid #e0e0ea}
+.dh-card-timer{background:#fef2f2;border:1px solid #fecaca;border-radius:5px;padding:2px 7px}
+.dh-card-timer-text{font-size:10px;font-weight:700;color:#e53e3e;font-family:'Metropolis',sans-serif}
+.dh-type-badge{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:600}
+.dh-badge-cashback{background:#e6f7f1;color:#00a86b}
+.dh-badge-rewards{background:#ede8fc;color:#5c2be2}
 
-.tab img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    display: block !important;
-    margin: auto;
-}
-.tab.active img {
-    width: 44px;
-    height: 44px;
-}
-.tab.active span {
-    font-size: 13px;
-    margin-top: 0;
-}
-.tab span {
-    display: block;
-    text-align: center;
-    margin-top: 2px;
-    font-size: 10px;
-    font-weight: 700;
-    color: #111;
-}
+/* ── SKELETONS ── */
+.dh-skel-card{background:#fff;border:1.5px solid #e0e0ea;border-radius:16px;overflow:hidden}
+.dh-skel-img{aspect-ratio:1;background:#f0f0f4;animation:dhshimmer 1.5s infinite}
+.dh-skel-body{padding:11px;display:flex;flex-direction:column;gap:8px}
+.dh-skel-line{height:10px;border-radius:4px;background:#f0f0f4;animation:dhshimmer 1.5s infinite}
+@keyframes dhshimmer{0%{opacity:1}50%{opacity:.5}100%{opacity:1}}
 
-/* CONTENT AREA */
+/* ── EMPTY ── */
+.dh-empty{text-align:center;padding:60px 20px;color:#9898aa;grid-column:1/-1}
+.dh-empty-icon{font-size:40px;margin-bottom:12px}
+.dh-empty-title{font-size:15px;color:#555566;margin-bottom:6px;font-weight:600}
 
-.content-wrapper {
-    background: #fff;
-    margin-top: -20px;
-    /* border-radius: 28px 28px 24px 24px; */
-    padding: 22px 6px;
-    float: left;
-    width: 100%;
-}
+/* ── DETAIL PAGE ── */
+.dh-detail-nav{background:rgba(255,255,255,.96);border-bottom:1px solid #e0e0ea;padding:0 16px;position:sticky;top:0;z-index:100}
+.dh-detail-nav-inner{max-width:1200px;margin:0 auto;height:56px;display:flex;align-items:center;gap:14px}
+.dh-back-btn{display:inline-flex;align-items:center;gap:6px;color:#555566;font-size:12px;font-weight:600;cursor:pointer;border:1.5px solid #e0e0ea;background:#fff;padding:6px 12px;border-radius:9px;font-family:'Metropolis',sans-serif}
+.dh-detail-inner{max-width:1100px;margin:0 auto;padding:24px 16px 80px}
+.dh-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.dh-gallery{position:sticky;top:72px}
+.dh-gallery-main{aspect-ratio:1;background:#fff;border:1.5px solid #e0e0ea;border-radius:16px;overflow:hidden;position:relative;margin-bottom:10px;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.dh-gallery-main img{width:100%;height:100%;object-fit:contain;padding:16px;transition:opacity .3s}
+.dh-gallery-main img.dh-fade{opacity:0}
+.dh-gallery-count{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.5);color:#fff;font-size:10px;font-weight:600;padding:3px 9px;border-radius:20px}
+.dh-gallery-viewing{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;display:flex;align-items:center;gap:5px}
+.dh-gallery-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:dhblink 1.4s infinite;flex-shrink:0}
+.dh-thumbs{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.dh-thumbs::-webkit-scrollbar{display:none}
+.dh-thumb{width:54px;height:54px;flex-shrink:0;border-radius:9px;overflow:hidden;border:2px solid #e0e0ea;cursor:pointer;background:#fff}
+.dh-thumb.active{border-color:#5c2be2}
+.dh-thumb img{width:100%;height:100%;object-fit:contain;padding:4px}
 
-/* CONTENT */
+/* ── DETAIL INFO ── */
+.dh-detail-info{display:flex;flex-direction:column;gap:16px}
+.dh-detail-retailer-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dh-detail-retailer{font-size:11px;text-transform:uppercase;letter-spacing:.9px;color:#9898aa;font-weight:600}
+.dh-detail-cat-badge{font-size:11px;padding:3px 9px;border-radius:20px;background:#f0f0f4;border:1.5px solid #e0e0ea;color:#555566;font-weight:500}
+.dh-detail-name{font-size:22px;font-weight:800;line-height:1.3;letter-spacing:-.4px;color:#111118}
+.dh-detail-viewing{display:inline-flex;align-items:center;gap:6px;background:#e6f7f1;border:1px solid #bbf7d0;border-radius:20px;padding:4px 11px;font-size:12px;font-weight:600;color:#00a86b}
+.dh-detail-viewing-dot{width:6px;height:6px;border-radius:50%;background:#00a86b;animation:dhblink 1.4s infinite}
 
-.content{
-  display:none;
-}
+/* ── PRICE BLOCK ── */
+.dh-price-block{background:#fff;border:1.5px solid #e0e0ea;border-radius:14px;padding:18px;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.dh-price-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.dh-detail-mrp{text-decoration:line-through;color:#9898aa;font-size:14px}
+.dh-detail-price{font-size:32px;font-weight:800;color:#111118;letter-spacing:-1px}
+.dh-detail-disc-badge{background:#5c2be2;color:#fff;padding:4px 11px;border-radius:7px;font-size:12px;font-weight:700}
+.dh-detail-timer{display:inline-flex;align-items:center;gap:7px;background:#fef2f2;border:1.5px solid #fecaca;border-radius:9px;padding:7px 13px;margin-top:4px}
+.dh-detail-timer-label{font-size:12px;color:#e53e3e;font-weight:500}
+.dh-detail-timer-val{font-size:14px;font-weight:700;color:#e53e3e}
+.dh-cb-line{font-size:13px;color:#555566;margin-top:4px}
+.dh-cb-line strong{color:#00a86b;font-weight:700}
 
-.content.active{
-  display:block;
-}
+/* ── WATERFALL ── */
+.dh-wf-toggle{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:10px 0 0;font-size:12px;color:#5c2be2;font-weight:600;border-top:1px solid #e0e0ea;margin-top:10px}
+.dh-wf-body{display:none;margin-top:8px;background:#f0f0f4;border-radius:10px;padding:12px;font-size:12px}
+.dh-wf-body.open{display:block}
+.dh-wf-row{display:flex;justify-content:space-between;padding:3px 0;color:#555566}
+.dh-wf-row.dh-wf-s .dh-wv{text-decoration:line-through;color:#9898aa}
+.dh-wf-row.dh-wf-d .dh-wv{color:#00a86b;font-weight:600}
+.dh-wf-row.dh-wf-a .dh-wv{color:#e53e3e}
+.dh-wf-divider{border:none;border-top:1.5px solid #d0d0de;margin:9px 0;display:block;height:0}
+.dh-wf-row.dh-wf-tot{color:#111118;font-weight:700}
+.dh-wf-row.dh-wf-tot .dh-wv{color:#5c2be2;font-size:14px}
+.dh-wf-row.dh-wf-sv{color:#00a86b;font-size:11px}
 
-/* INNER TABS */
+/* ── USER TABS (B1) ── */
+.dh-user-tabs{display:flex;background:#f0f0f4;border:1.5px solid #e0e0ea;border-radius:11px;overflow:hidden;margin-bottom:4px}
+.dh-user-tab{flex:1;background:none;border:none;padding:10px 8px;cursor:pointer;font-family:'Metropolis',sans-serif;font-size:12px;font-weight:600;color:#555566;text-align:center;line-height:1.4}
+.dh-user-tab.active{background:#5c2be2;color:#fff}
+.dh-utab-small{font-size:10px;opacity:.8;display:block}
 
-.inner-tabs{
-  display:flex;
-  gap:10px;
-  overflow-x:auto;
-  padding-bottom:10px;
-}
+/* ── CTA ── */
+.dh-cta-btn{display:flex;width:100%;align-items:center;justify-content:center;gap:8px;background:#5c2be2;color:#fff;border:none;padding:15px;border-radius:12px;font-family:'Metropolis',sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 4px 16px rgba(92,43,226,.3)}
+.dh-cta-sub{text-align:center;font-size:11px;color:#9898aa;margin-top:5px}
+.dh-share-btn{display:flex;width:100%;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;border:none;padding:10px 15px;border-radius:10px;font-family:'Metropolis',sans-serif;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}
 
-.inner-tabs::-webkit-scrollbar{
-  display:none;
-}
+/* ── CASHBACK CHIPS ── */
+.dh-cb-chips{display:flex;gap:12px;justify-content:center;margin-bottom:10px}
+.dh-cb-chip{flex:1;background:#ede8fc;border:1.5px solid rgba(92,43,226,.15);border-radius:14px;padding:16px 8px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;max-width:150px}
+.dh-cb-chip-label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:#5c2be2;font-weight:700}
+.dh-cb-chip-val{font-size:24px;font-weight:800;color:#5c2be2;line-height:1}
+.dh-cb-chip-unit{font-size:11px;color:#555566;font-weight:500}
+.dh-cb-chip.dh-green{background:#e6f7f1;border-color:rgba(0,168,107,.15)}
+.dh-cb-chip.dh-green .dh-cb-chip-label{color:#00a86b}
+.dh-cb-chip.dh-green .dh-cb-chip-val{color:#00a86b}
 
-.inner-tab {
-    min-width: 23%;
-    background: #f3f6ff;
-    border: 1px solid #d8e0ff;
-    border-radius: 14px;
-    padding: 10px 9px;
-    cursor: pointer;
-    text-align: center;
-    flex-shrink: 0;
-    position: relative;
-    margin-top: 22px;
-    height: 56px;
-    /* margin-top: 25px; */
-    position: relative;
-    top: 11px;
-}
+/* ── RATES DIV TABLE ── */
+.dh-rates-head{display:flex;font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#9898aa;padding:7px 10px;border-bottom:1px solid #e0e0ea;font-weight:600}
+.dh-rates-row{display:flex;padding:7px 10px;border-bottom:1px solid #e0e0ea;font-size:12px;color:#555566}
+.dh-rates-col1{flex:1}
+.dh-rates-col2{font-weight:600;color:#111118}
 
-.inner-tab.active {
-    background: #dff4e5;
-    border-color: #b9e3c6;
-    height: 69px;
-    position: relative;
-    top: -1px;
-}
-.discount-icon {
-    width: 25px;
-    height: 25px;
-    background: #0057ff;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto auto 10px;
-    font-weight: bold;
-    font-size: 13px;
-    position: absolute;
-    top: -13px;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-}
+/* ── TABS SECTION ── */
+.dh-tabs-wrap{background:#fff;border:1.5px solid #e0e0ea;border-radius:13px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.dh-tab-list{display:flex;border-bottom:1px solid #e0e0ea}
+.dh-tab-btn{flex:1;background:none;border:none;border-bottom:2px solid transparent;color:#555566;padding:12px 8px;cursor:pointer;font-family:'Metropolis',sans-serif;font-size:12px;font-weight:600;margin-bottom:-1px;text-align:center}
+.dh-tab-btn.active{color:#5c2be2;border-bottom-color:#5c2be2;background:#ede8fc}
+.dh-tab-content{padding:16px;display:none;font-size:13px;line-height:1.8;color:#555566}
+.dh-tab-content.active{display:block}
 
-.inner-tab.active .discount-icon{
-  background:#0c9b42;
-}
+/* ── SIMILAR GRID ── */
+.dh-similar-section{margin-top:40px}
+.dh-similar-title{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px;color:#111118}
+.dh-similar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
 
-.inner-tab p {
-    font-size: 8px;
-    font-weight: 700;
-    color: #0057ff;
-    margin-top: 4px;
-}
+/* ── FLOATING CTA (mobile) ── */
+.dh-floating-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;padding:10px 14px;background:rgba(255,255,255,.97);border-top:1px solid #e0e0ea;box-shadow:0 -4px 20px rgba(0,0,0,.1)}
 
-.inner-tab.active p {
-    font-size: 11px;
-    color: #000;
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .dh-sidebar{display:none}
+  .dh-detail-grid{grid-template-columns:1fr}
+  .dh-floating-cta{display:block}
+  .dh-inline-cta-wrap{display:none}
+  .dh-detail-inner{padding-bottom:90px}
 }
-
-.inner-tab.active h3 {
-    color: #000;
-}
-.inner-tab h3 {
-    font-size: 19px;
-    font-weight: 900;
-    color: #0057ff;
-    margin-top: 0px;
-    text-transform: uppercase;
-}
-.inner-tab.active h3 {
-    font-size: 22px;
-}
-/* INNER CONTENT */
-
-.inner-content {
-    display: none;
-    margin-top: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, #FFFFFF 0%, #DFFBEA 41%);
-    float: left;
-    padding: 6px;
-}
-
-.inner-tab.active .discount-icon {
-    width: 30px;
-    height: 30px;
-    top: -20px;
-}
-.inner-content.active{
-  display:block;
-}
-
-/* DEAL CARD */
-
-.deal-card {
-    background: #EEFFF5;
-    border: 1px solid #96CCAB;
-    border-radius: 18px;
-    padding: 12px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    width: 48%;
-    float: left;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.deal-title{
-  font-size:20px;
-  font-weight:700;
-  margin-bottom:8px;
-}
-
-.deal-price{
-  font-size:24px;
-  font-weight:900;
-  color:#0057ff;
-  margin-bottom:14px;
-}
-
-.deal-btn{
-  background:#0057ff;
-  color:#fff;
-  border:none;
-  padding:10px 18px;
-  border-radius:12px;
-  cursor:pointer;
-  font-size:15px;
-}
-.deal-card img {
-    margin: 0 auto;
-    display: block !important;
-    margin-bottom: 15px;
-}.deal-card strong {
-    background: #009824;
-    color: #fff;
-    padding: 12px;
-    border-radius: 14px;
-    margin-right: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    box-shadow: 2.5px 2.5px 0px -1px #00421D;
-    border: 0.5px solid #000;
-    float: left;
-}.deal-card span {
-    color: #0F1418;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-	display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.deal-card span.amount {
-    color: #566276 !important;
-    font-size: 18px !important;
-    text-decoration: line-through;
-    font-weight: 400 !important;
-    margin-top: 17px !important;
-    display: block;
-    float: left;
-    clear: none;
-    height: auto;
-}
-.deal-card b {
-    font-size: 15px !important;
-    color: #0F1418 !important;
-    margin-top: 8px !important;
-    font-weight: 500 !important;
-    font-style: italic !important;
-    /* display: block !important; */
-    margin-bottom: 3px !important;
-    clear: both;
-    float: left;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.deal-card span {
-    color: #0F1418;
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 0;
-    font-weight: 600;
-    float: left;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    clear: both;
-}
-
-b.pack-value {
-    font-size: 14px !important;
-    margin-bottom: 10px !important;
-    color: #566276 !important;
-    margin-top: 8px !important;
-    font-style: normal !important;
-}
-
-.deal-card button {
-    background: #009824;
-    color: #fff;
-    width: 100%;
-    padding: 9px;
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 9px;
-    font-size: 16px;
-}
-.main-section {
-    background-image: url("https://asset22.ckassets.com/resources/image/staticpage_images/Frame 4142-1779777016.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    float: left;
-    display: block;
-    background-color: #0047ff;
-}
-
-.ninity_store {
-    /* background: #0047ff; */
-    float: left;
-    display: block;
-    width: 100%;
-	position: relative;
-}
-
-.ninity_store img {
-    margin: 0 auto;
-    width: 90%;
-    display: block !important;
-    margin-top: -40px;
-}
-
-.icon img {
-    width: 80px;
-}
-.footer-sec {
-    float: left;
-    display: block;
-    width: 100%;
-}
-.footer-sec img {
-    width: 100%;
-    display: block;
-}
-.more-cards {
-  display: none;
-}
-button.see-all-btn {
-    background: #fff;
-    color: #001332;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 7px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid #B3E5C6;
-}
-.offer-timer {
-    position: absolute;
-    bottom: 19px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background: #FF0000;
-    color: #fff;
-    font-size: 17px;
-    padding: 2px;
-    width: 113px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.search-box{
-    width:100%;
-    max-width:400px;
-    margin:auto;
-}
-
-.search-box input{
-    width:100%;
-    height:50px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    padding:0 15px;
-    font-size:16px;
-    outline:none;
-    box-sizing:border-box;
-}
-
-
-
-/* No Result */
-
-.no-result {
-    max-width: 400px;
-    margin: 15px auto;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ffdddd;
-    background: #fff5f5;
-    border-radius: 10px;
-    display: none;
-    padding: 6px;
-    width: 70%;
-    float: left;
-    margin: 0 auto;
-    float: left;
-    margin-left: 15%;
-    margin-top: 17px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.search-sec {
-    float: none;
-    width: 95%;
-    margin: 0 auto;
-    display: block;
-}.search-box {
-    width: 67%;
-    /* max-width: 400px; */
-    /* margin: auto; */
-    float: left;
-    position: relative;
-}.search-box input {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 0 15px;
-    font-size: 16px;
-    outline: none;
-    box-sizing: border-box;
-    font-size: 13px;
-    padding-left: 37px;
-}.search-box img {
-    position: absolute;
-    left: 12px;
-    top: 17px;
-    width: 19px;
-}.free-sheeping {
-    float: right;
-    background: #fff;
-    padding: 8px;
-    border-radius: 9px;
-}.free-sheeping img {
-    width: 79%;
-    margin: 0 auto;
-    display: block !important;
+@media(max-width:600px){
+  .dh-deal-grid{grid-template-columns:repeat(2,1fr) !important}
+  .dh-page-body{padding:12px 10px 50px}
+  .dh-detail-name{font-size:18px}
+  .dh-detail-price{font-size:26px}
+  .dh-detail-inner{padding:14px 12px 40px}
+  .dh-cb-chips{gap:7px}
+  .dh-cb-chip-val{font-size:20px}
+  .dh-card-price{font-size:16px}
+  .dh-card-body{padding:9px}
 }
 </style>
-<div class="main-wrapper"><!-- TOP BLUE SECTION -->
-<div class="main-section">
-<div class="icon"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/img-1779778178.png" /></div>
-<div class="ninity_store"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/logo-1779776961.png" />
-<div class="offer-timer"></div>
+
+<!-- LOADER -->
+<div class="dh-loader" id="dhLoader">
+  <div class="dh-loader-logo">Deals<span>Hub</span></div>
+  <div class="dh-loader-bar"><div class="dh-loader-fill"></div></div>
+  <div class="dh-loader-text">Loading today's best deals...</div>
 </div>
-<div class="search-sec">
-<div class="search-box"><input type="text" id="searchInput" /> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/search_icon-1779868965.png" /></div>
-<div class="free-sheeping"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/free-shiping-1779868995.gif" /></div>
+
+<!-- LISTING PAGE -->
+<div id="dhListingPage" style="display:none">
+
+  <!-- NAV -->
+  <div class="dh-nav">
+    <div class="dh-nav-inner">
+      <div class="dh-logo" onclick="dhShowListing()">Deals<span>Hub</span></div>
+      <div class="dh-search-wrap">
+        <span class="dh-search-icon">🔍</span>
+        <input class="dh-search" type="text" id="dhSearch" placeholder="Search deals, brands...">
+        <div class="dh-suggestions" id="dhSuggestions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY PILLS -->
+  <div class="dh-catbar">
+    <div class="dh-catbar-inner" id="dhCatBar">
+      <div class="dh-cat-pill active" data-cat="all" onclick="dhSetCat('all')">All Deals</div>
+    </div>
+  </div>
+
+  <!-- SORT + PRICE PILLS -->
+  <div class="dh-sort-bar">
+    <div class="dh-sort-inner">
+      <span class="dh-sort-label">Sort:</span>
+      <div class="dh-sort-pill active" data-sort="order" onclick="dhSetSort('order')">⭐ Featured</div>
+      <div class="dh-sort-pill" data-sort="discount" onclick="dhSetSort('discount')">🔥 Biggest Disc.</div>
+      <div class="dh-sort-pill" data-sort="price_asc" onclick="dhSetSort('price_asc')">💰 Lowest Price</div>
+      <div class="dh-sort-pill" data-sort="price_desc" onclick="dhSetSort('price_desc')">⬆ Highest Price</div>
+      <div class="dh-sort-pill" data-sort="newest" onclick="dhSetSort('newest')">🆕 Newest</div>
+      <div class="dh-sort-sep"></div>
+      <div class="dh-price-filter">
+        <span class="dh-price-lbl">₹</span>
+        <input class="dh-price-input" id="dhPriceMin" type="number" placeholder="Min">
+        <span class="dh-price-lbl">—</span>
+        <input class="dh-price-input" id="dhPriceMax" type="number" placeholder="Max">
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE BODY -->
+  <div class="dh-page-body dh-root">
+    <!-- SIDEBAR -->
+    <div class="dh-sidebar">
+      <div class="dh-sidebar-box">
+        <div class="dh-sidebar-title">
+          <span>Brands</span>
+          <span class="dh-sidebar-clear" id="dhClearBrands" onclick="dhClearBrands()">Clear</span>
+        </div>
+        <input class="dh-brand-search" id="dhBrandSearch" type="text" placeholder="Search brand">
+        <div class="dh-brand-list" id="dhBrandList"></div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="dh-content-area">
+      <div class="dh-results-header" id="dhResultsHeader">
+        <div class="dh-results-count" id="dhResultsCount"></div>
+      </div>
+      <div class="dh-deal-grid" id="dhSkeletons" style="margin-bottom:16px"></div>
+      <div class="dh-deal-grid" id="dhContent"></div>
+    </div>
+  </div>
 </div>
-<div class="no-result" id="noResult">No deal available</div>
-<div class="top-section">
-<div class="tabs">
-<div class="tab active" data-tab="All"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/all-1779781935.png" /> <span>All</span></div>
-<div class="tab" data-tab="Electronics"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/electronics-1779781943.png" /> <span>Electronics</span></div>
-<div class="tab" data-tab="Beauty"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/beauty-1779781955.png" /> <span>Beauty</span></div>
-<div class="tab" data-tab="Fashion"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/FASHION-1779781967.png" /> <span>Fashion</span></div>
+
+<!-- DETAIL PAGE -->
+<div id="dhDetailPage" style="display:none" class="dh-root">
+
+  <!-- DETAIL NAV -->
+  <div class="dh-detail-nav">
+    <div class="dh-detail-nav-inner">
+      <button class="dh-back-btn" onclick="dhShowListing()">← Back to deals</button>
+      <div class="dh-logo" onclick="dhShowListing()">Deals<span>Hub</span></div>
+    </div>
+  </div>
+
+  <!-- FLOATING CTA -->
+  <div class="dh-floating-cta" id="dhFloatingCta">
+    <a class="dh-cta-btn" id="dhFloatingBtn" href="#" target="_blank" rel="noopener">🛍 Shop Now &amp; Earn Cashback</a>
+  </div>
+
+  <div class="dh-detail-inner" id="dhDetailInner">
+    <div class="dh-detail-grid">
+      <div id="dhGallery" class="dh-gallery"></div>
+      <div id="dhDetailInfo" class="dh-detail-info"></div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<!-- CONTENT WRAPPER -->
-<div class="content-wrapper"><!-- All -->
-<div class="content active" id="All">
-<div class="inner-tabs">
-<div class="inner-tab active" data-inner="All99">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹99</h3>
-</div>
-<div class="inner-tab" data-inner="All199">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹199</h3>
-</div>
-<div class="inner-tab" data-inner="All299">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹299</h3>
-</div>
-<div class="inner-tab" data-inner="AllDeal">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹799</h3>
-</div>
-</div>
-<div class="inner-content active" id="All99">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-hamaramall-manicure-pedicure-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779794694.png" /> <strong>₹50</strong><span class="amount">₹399</span> <b>Salon</b> <span>Nail Clippers and Cleaner Care Tool Set</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-plugx-wired-inear-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779794703.png" /> <strong>₹70</strong><span class="amount">₹999</span> <b>PlugX</b> <span>Wired In-Ear Earphones with Mic</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-times-prime-flash-99-old-2105"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779794708.png" /> <strong>₹99</strong><span class="amount">₹1499</span> <b>Times Prime</b> <span>Times Prime Subscription</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-happilo-essentials-0905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779794712.png" /> <strong>₹84</strong><span class="amount">₹245</span> <b>Happilo Essentials</b> <span>Sultan Dates: 500g</span> <b class="pack-value">500g</b> <button>Buy now</button> </a></div>
-<!-- Hidden Cards -->
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-glucose-d-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/5-1779794726.png" /> <strong>₹59</strong><span class="amount">₹252</span> <b>HamaraMall</b> <span>Glucose D Orange Flavour: 500gm</span> <b class="pack-value">500gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-untam3d-co-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779794735.png" /> <strong>₹93</strong><span class="amount">₹1980</span> <b>UNTAM3D</b> <span>Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++: 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-nipponfx10-flash-99-shampoo-1905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/7-1779794745.png" /> <strong>₹90</strong><span class="amount">₹576</span> <b>Nippon Paint FX10</b> <span>Car Shampoo Max</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-holder-0305"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/8-1779794748.png" /> <strong>₹46</strong><span class="amount">₹699</span> <b>Portronics</b> <span>Modesk Mobile Holder Stand for Smartphones</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-sunscreen-spf-50-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/9-1779794761.png" /> <strong>₹87</strong><span class="amount">₹349</span> <b>Zop</b> <span>Sunscreen SPF 50 Broad Spectrum PA+++ with UV Protection</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-pad-3-1405"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/10-1779794767.png" /> <strong>₹67</strong><span class="amount">₹399</span> <b>Portronics</b> <span>Comfipad 3 Mouse Pad</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-fitfeast-protein-sachet-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/11-1779794784.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>FitFeast Protein Sachet Malai Kulfi: 50gm</span> <b class="pack-value">50gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-bombay-shaving-company-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/12-1779794789.png" /> <strong>₹66</strong><span class="amount">₹75</span> <b>Bombay Shaving Company</b> <span>Charcoal Face Wash: 15g</span> <b class="pack-value">15g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-nisha-beard-colour-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/13-1779794811.png" /> <strong>₹59</strong><span class="amount">₹249</span> <b>Nisha</b> <span>Beard Colour Black: 120gm</span> <b class="pack-value">120gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jasmine-blossom-bathing-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/14-1779794826.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>Jasmine Blossom Bathing Soap 125 G</span> <b class="pack-value">125g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-oudwood-bathing-soap-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/15-1779794834.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>Oudwood Bathing Soap</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-lavenour-dtan-charcoal-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/16-1779794845.png" /> <strong>₹87</strong><span class="amount">₹249</span> <b>Lavenour</b> <span>D-Tan Charcoal Face Wash: 100ml</span> <b class="pack-value">100ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-spf-50-sunscreen-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/17-1779794856.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Zop</b> <span>SPF 50 Sunscreen Matte Lightweight Non-Greasy Zero White Cast 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portro-typec-0905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/18-1779794867.png" /> <strong>₹68</strong><span class="amount">₹199</span> <b>Portronics</b> <span>USB to Type C Cable 3A Fast Charging: 1 Meter</span> <b class="pack-value">1 Meter</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-ice-roller-for-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/19-1779794878.png" /> <strong>₹87</strong><span class="amount">₹276</span> <b>Zop</b> <span>Ice Roller for Face with Scrubber</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-turmeric-powder-rich-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/20-1779794892.png" /> <strong>₹49</strong><span class="amount">₹60</span> <b>Zop</b> <span>Turmeric Powder: 50gm</span> <b class="pack-value">50gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-led-flexible-wire-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/21-1779794905.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>LED Flexible Wire Waterproof Lights for Party 2AA Battery Operated (Battery Not Included)</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-red-chili-powder-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/22-1779794918.png" /> <strong>₹44</strong><span class="amount">₹65</span> <b>Zop</b> <span>Red Chili Powder: 100 Gms</span> <b class="pack-value">100gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inlief-shot-glass-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/23-1779794932.png" /> <strong>₹70</strong><span class="amount">₹299</span> <b>Inlief</b> <span>Shot Glass Candle: Blueberry</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-cookie-fudge-peanut-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/24-1779794945.png" /> <strong>₹87</strong><span class="amount">₹239</span> <b>Zop</b> <span>Cookie Fudge Peanut Butter: 150g</span> <b class="pack-value">150g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-sanfe-zero-sweat-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/25-1779794957.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Sanfe</b> <span>Zero Sweat Underarm Lightening Roll-On: 50ml</span> <b class="pack-value">50ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-freshluxe-aqua-essence-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/26-1779794969.png" /> <strong>₹87</strong><span class="amount">₹349</span> <b>FreshLuxe</b> <span>Aqua Essence Shower Gel: 200ml</span> <b class="pack-value">200ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-denver-vip-rush-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/27-1779794984.png" /> <strong>₹67</strong><span class="amount">₹249</span> <b>DENVER</b> <span>VIP Rush Spray Perfume Eau de Parfum: 30ml</span> <b class="pack-value">30ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-rice-water-face-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/28-1779794994.png" /> <strong>₹87</strong><span class="amount">₹249</span> <b>Zop</b> <span>Rice Water Face Wash</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-xpop-ultra-soft-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/29-1779795007.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>X-POP</b> <span>Ultra Soft Trunk: Black Solid</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-zoff-turmeric-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/30-1779795018.png" /> <strong>₹19</strong><span class="amount">₹55</span> <b>Zoff</b> <span>Turmeric Powder/Haldi Powder: 70gm</span> <b class="pack-value">70gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-color-cupid-love-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/31-1779795030.png" /> <strong>₹59</strong><span class="amount">₹299</span> <b>Color Cupid</b> <span>Love Glow BB Cream SPF 15: 30g</span> <b class="pack-value">30g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-kesarco-himalayan-pink-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/32-1779795040.png" /> <strong>₹87</strong><span class="amount">₹225</span> <b>KesarCo</b> <span>Himalayan Pink Salt: 400gm</span> <b class="pack-value">400gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-deodap-spiral-charger-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/33-1779795054.png" /> <strong>₹87</strong><span class="amount">₹99</span> <b>DeoDap</b> <span>Spiral Charger Spring Cable Protector (Pack of 4)</span> <b class="pack-value">Pack of 4</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-happilo-premium-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/34-1779795075.png" /> <strong>₹84</strong><span class="amount">₹240</span> <b>Happilo</b> <span>Omani Dates: 250g</span> <b class="pack-value">250g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-deodap-1462b-bath-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/35-1779795088.png" /> <strong>₹87</strong><span class="amount">₹99</span> <b>DeoDap</b> <span>Bath Sponge Round Loofah and Back Scrubber</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-charcoal-shaving-foam-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/36-1779795102.png" /> <strong>₹84</strong><span class="amount">₹95</span> <b>Zop</b> <span>Charcoal Shaving Foam: 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inliefs-lip-balm-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/37-1779795115.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Inliefs</b> <span>Lip Balm: 15gm</span> <b class="pack-value">15gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inlief-face-wash-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/38-1779795126.png" /> <strong>₹78</strong><span class="amount">₹349</span> <b>Inlief</b> <span>Face Wash</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-doremon-small-hot-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/39-1779795139.png" /> <strong>₹87</strong><span class="amount">₹154</span> <b>Doremon</b> <span>Hot Water Bag for Pain Relief: Menstrual Cramps</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jade-roller-gua-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/40-1779795149.png" /> <strong>₹87</strong><span class="amount">₹499</span> <b>Zop</b> <span>Jade Roller Gua Sha Combo</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inlief-sheet-mask-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/41-1779795170.png" /> <strong>₹87</strong><span class="amount">₹318</span> <b>Inlief</b> <span>Sheet Mask Pack of 2: Niacinamide &amp; Salicylic Acid</span> <b class="pack-value">Pack of 2</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-n95-antipollution-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/42-1779795183.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>N95 Anti-Pollution &amp; Virus Face Mask: 10 Pcs Set</span> <b class="pack-value">10 Pcs</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-espresso-body-wash-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/43-1779795189.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Zop</b> <span>Espresso Body Wash Caffeine Moisturizing: 225ml</span> <b class="pack-value">225ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-kimti-white-pearl-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/44-1779857289.png" /> <strong>₹87</strong><span class="amount">₹490</span> <b>Kimti</b> <span>White Pearl Studs Earring </span> <b class="pack-value"> 1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-creature-formal-casual-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/45-1779857293.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Creature</b> <span>Formal Casual Black Color Genuine Belts</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-xpop-ultra-soft-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/46-1779857310.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>X-Pop</b> <span>Ultra Soft Trunk: Black Solid</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-usb-light-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-99-1780919262.png" /> <strong>₹52</strong><span class="amount">₹99</span> <b>Zop</b> <span>USB Light for Keyboard Flexible USB Laptop Light Not specified Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-<div class="inner-content" id="All199">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-dynamic-bass-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779800061.png" /> <strong>₹110</strong><span class="amount">₹599</span> <b>Needibay</b> <span>Dynamic Bass Wireless Bluetooth Neckband</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-nutriburst-flash-99-shilajit-gummies-1705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779800069.png" /> <strong>₹104</strong><span class="amount">₹899</span> <b>Shilajit Gummies</b> <span>Shilajit Gummies</span> <b class="pack-value">30 Gummies</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-multiport-fast-car-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779800077.png" /> <strong>₹175</strong><span class="amount">₹1794</span> <b>Zop</b> <span>Multi-Port Fast Car Charger 4 USB: 12V-24V</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-zopin-iphone-charger-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779800104.png" /> <strong>₹175</strong><span class="amount">₹799</span> <b>Zop.in</b> <span>iPhone Charger Case Cover Marshall</span> <b class="pack-value">4 Piece Set</b> <button>Buy now</button> </a></div>
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-nutriburst-flash-99-omega3-single-strength-1705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/5-1779800117.png" /> <strong>₹130</strong><span class="amount">₹599</span> <b>Nutriburst</b> <span>Omega-3 Single Strength 1000mg 180 EPA</span> <b class="pack-value">180 Capsules</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-sanfe-flash-99-exfloiting-gel-1905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779800126.png" /> <strong>₹147</strong><span class="amount">₹399</span> <b>Sanfe</b> <span>Instant Tan &amp; Dead Skin Exfoliating Gel</span> <b class="pack-value">100gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-koparo-clean-flash-99-floor-cleaner-nontoxic-1705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/7-1779800135.png" /> <strong>₹115</strong><span class="amount">₹265</span> <b>Koparo Clean</b> <span>Floor Cleaner Jasmine</span> <b class="pack-value">1 Litre</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-song-of-india-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/8-1779800144.png" /> <strong>₹131</strong><span class="amount">₹399</span> <b>Zop</b> <span>Song of India Plant</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-koparo-flash-99-dishwashing-liquid-750ml-1705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/9-1779800153.png" /> <strong>₹105</strong><span class="amount">₹265</span> <b>Koparo Clean</b> <span>Dishwashing Liquid 750ml</span> <b class="pack-value">750ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-envy-pack-of-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/10-1779800161.png" /> <strong>₹152</strong><span class="amount">₹440</span> <b>Envy</b> <span>Pack of 2 Deos</span> <b class="pack-value">120ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-koparo-clean-flash-99-kitchen-sponge-wipe-1705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/11-1779800174.png" /> <strong>₹110</strong><span class="amount">₹215</span> <b>Koparo Clean</b> <span>Kitchen Sponge Wipe</span> <b class="pack-value">Pack of 3</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-zopin-iphone-charger-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779800104.png" /> <strong>₹175</strong><span class="amount">₹799</span> <b>Zop.in</b> <span>iPhone Charger Case Cover Marshall</span> <b class="pack-value">4 Piece Set</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-clamp-m2-2505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/13-1779800198.png" /> <strong>₹199</strong><span class="amount">₹899</span> <b>Portronics</b> <span>Clamp M2 Car Mobile Holder 360 Rotational</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-toad-103-2505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/14-1779800208.png" /> <strong>₹123</strong><span class="amount">₹499</span> <b>Portronics</b> <span>Toad 103 USB Mouse</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-smart-t10mini-handheld-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/15-1779800217.png" /> <strong>₹175</strong><span class="amount">₹999</span> <b>Zop</b> <span>T-10mini Handheld Table Fan: Blue</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-kesar-co-chia-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/16-1779800228.png" /> <strong>₹110</strong><span class="amount">₹350</span> <b>Kesar Co</b> <span>Chia Seeds</span> <b class="pack-value">200gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-ramam-flash-99-chia-seeds-250g-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/17-1779800239.png" /> <strong>₹120</strong><span class="amount">₹299</span> <b>Ramam</b> <span>Chia Seeds</span> <b class="pack-value">250g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-conscious-chemist-sun-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/18-1779800250.png" /> <strong>₹140</strong><span class="amount">₹599</span> <b>Conscious Chemist</b> <span>Sun Drink Oil-Free Sunscreen</span> <b class="pack-value">50gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-bold-care-404-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/19-1779800261.png" /> <strong>₹114</strong><span class="amount">₹199</span> <b>Bold Care</b> <span>404 Super Ultra Thin Chocolate Condoms</span> <b class="pack-value">10 Units</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-red-chilli-whole-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/20-1779800271.png" /> <strong>₹101</strong><span class="amount">₹200</span> <b>Zop</b> <span>Red Chilli Whole Lal Mirch</span> <b class="pack-value">200g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-hair-removal-cream-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/21-1779800281.png" /> <strong>₹128</strong><span class="amount">₹149</span> <b>Zop</b> <span>Hair Removal Cream for Dry &amp; Sensitive Skin</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jewellery-organiser-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/22-1779857427.png" /> <strong>₹175</strong><span class="amount">₹1000</span> <b>Kimti</b> <span>Jewellery Organiser</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-<div class="inner-content" id="All299">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-fitfeast-belgian-chocolate-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779800295.png" /> <strong>₹219</strong><span class="amount">₹349</span> <b>FitFeast</b> <span>Belgian Chocolate Peanut Butter</span> <b class="pack-value">400g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-100w-charger-cable-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779800299.png" /> <strong>₹263</strong><span class="amount">₹1999</span> <b>Zop</b> <span>100W Charger Cable Fast Charging</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-mens-textured-sleeveless-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779857431.png" /> <strong>₹263</strong><span class="amount">₹1999</span> <b>Starvy</b> <span>Men's Textured Sleeveless T-Shirt</span> <b class="pack-value">Pack of 2</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-zen-single-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-199-1780919375.png" /> <strong>₹154</strong><span class="amount">₹999</span> <b>Zop</b> <span>Buy Tecsox: Zen Single Wireless Earbud with Comfortable Fit Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="AllDeal">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-waterproof-backpack-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779800316.png" /> <strong>₹303</strong><span class="amount">₹1999</span> <b>Waterproof Backpack</b> <span>Anti-Theft Sling &amp; Backpack</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-pack-of-2-ghee-2505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779800319.png" /> <strong>₹351</strong><span class="amount">₹839</span> <b>Zop</b> <span>Pack of 2 A2 Desi Ghee &amp; Buffalo Ghee</span> <b class="pack-value">180ml Each</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-tecsox-pro-watch-1405"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779800331.png" /> <strong>₹331</strong><span class="amount">₹5999</span> <b>TecSox</b> <span>Pro Smart Watch Multi Sports Mode</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-bsc-flash-99-power-play-nxt-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779800334.png" /> <strong>₹461</strong><span class="amount">₹1000</span> <b>Power Play</b> <span>NXT Beard Trimmer</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-pack-of-2-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/5-1779800348.png" /> <strong>₹351</strong><span class="amount">₹899</span> <b>Zop</b> <span>Pack of 2 A2 Cow Desi Ghee</span> <b class="pack-value">180ml Each</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-hammer-ultra-pods-0305"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779800351.png" /> <strong>₹422</strong><span class="amount">₹3499</span> <b>Hammer</b> <span>Ultra Pods TWS Earbuds with 3D Stereo Sound &amp; Touch Controls: Black</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-beyoung-plain-sage-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/7-1779857551.png" /> <strong>₹307</strong><span class="amount">₹599</span> <b>BeYoung</b> <span>Plain Sage Green Mens Boxer</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-navy-white-black-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/8-1779857555.png" /> <strong>₹439</strong><span class="amount">₹1299</span> <b>Heganwalk</b> <span>Navy White Black 3 Pack Short Sleeve T-Shirts</span> <b class="pack-value">Pack of 3</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-beyoung-army-green-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/9-1779857568.png" /> <strong>₹703</strong><span class="amount">₹1598</span> <b>BeYoung</b> <span>Army Green Cotton Cargo Joggers</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-hammer-cyclone-round-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-1-1780919516.png" /> <strong>₹879</strong><span class="amount">₹4999</span> <b>Zop</b> <span>Cyclone Round Dial Smart Watch with 1.39&rdquo; Display Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-mini-bluetooth-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-2-1780919687.png" /> <strong>₹351</strong><span class="amount">₹1999</span> <b>Zop</b> <span>Mini Bluetooth Speaker 360 Crystal Clear Sound Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-zopin-p9-bluetooth-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-3-1780919697.png" /> <strong>₹351</strong><span class="amount">₹999</span> <b>Zop</b> <span>P9 Bluetooth Headphones Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-hammer-ultra-pods-2705"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-4-1780919706.png" /> <strong>₹703</strong><span class="amount">₹3499</span> <b>Zop</b> <span>Ultra Pods TWS Earbuds with 3D Stereo Sound &amp; Touch Controls Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-</div>
-<!-- ELECTRONICS -->
-<div class="content" id="Electronics">
-<div class="inner-tabs">
-<div class="inner-tab active" data-inner="electronics99">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹99</h3>
-</div>
-<div class="inner-tab" data-inner="electronics199">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹199</h3>
-</div>
-<div class="inner-tab" data-inner="electronics299">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹299</h3>
-</div>
-<div class="inner-tab" data-inner="electronics_all">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹799</h3>
-</div>
-</div>
-<div class="inner-content active" id="electronics99">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-plugx-wired-inear-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779794703.png" /> <strong>₹70</strong><span class="amount">₹999</span> <b>PlugX</b> <span>Wired In-Ear Earphones with Mic</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-holder-0305"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/8-1779794748.png" /> <strong>₹46</strong><span class="amount">₹699</span> <b>Portronics</b> <span>Modesk Mobile Holder Stand for Smartphones</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-pad-3-1405"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/10-1779794767.png" /> <strong>₹67</strong><span class="amount">₹399</span> <b>Portronics</b> <span>Comfipad 3 Mouse Pad</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portro-typec-0905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/18-1779794867.png" /> <strong>₹68</strong><span class="amount">₹199</span> <b>Portronics</b> <span>USB to Type C Cable 3A Fast Charging: 1 Meter</span> <b class="pack-value">1 Meter</b> <button>Buy now</button> </a></div>
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-ice-roller-for-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/19-1779794878.png" /> <strong>₹87</strong><span class="amount">₹276</span> <b>Zop</b> <span>Ice Roller for Face with Scrubber</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-led-flexible-wire-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/21-1779794905.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>LED Flexible Wire Waterproof Lights for Party 2AA Battery Operated (Battery Not Included)</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-deodap-spiral-charger-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/33-1779795054.png" /> <strong>₹87</strong><span class="amount">₹99</span> <b>DeoDap</b> <span>Spiral Charger Spring Cable Protector</span> <b class="pack-value">Pack of 4</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-doremon-small-hot-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/39-1779795139.png" /> <strong>₹87</strong><span class="amount">₹154</span> <b>Doremon</b> <span>Hot Water Bag for Pain Relief: Menstrual Cramps</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-usb-light-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-99-1780919262.png" /> <strong>₹52</strong><span class="amount">₹99</span> <b>Zop</b> <span>USB Light for Keyboard Flexible USB Laptop Light Not specified Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-<div class="inner-content" id="electronics199">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-dynamic-bass-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779800061.png" /> <strong>₹110</strong><span class="amount">₹599</span> <b>Needibay</b> <span>Dynamic Bass Wireless Bluetooth Neckband</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-multiport-fast-car-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779800077.png" /> <strong>₹175</strong><span class="amount">₹1794</span> <b>Zop</b> <span>Multi-Port Fast Car Charger 4 USB: 12V-24V</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-zopin-iphone-charger-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779800104.png" /> <strong>₹175</strong><span class="amount">₹799</span> <b>Zop.in</b> <span>iPhone Charger Case Cover Marshall</span> <b class="pack-value">4 Piece Set</b> <button>Buy now</button> </a></div>
-<!-- 
-    <div class="deal-card">
-    <a href="cashkaro://deals/PPS280-zop-flash-99-zopin-iphone-charger-1805">
-      <img src="">
-      <strong>₹175</strong><span class="amount">₹799</span>
-      <b>Zop.in</b>
-      <span>iPhone Charger Case Cover Marvel Venom</span>
-      <b class="pack-value">4 Piece Set</b>
-      <button>Buy now</button>
-    </a>
-  </div> -->
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-clamp-m2-2505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/13-1779800198.png" /> <strong>₹199</strong><span class="amount">₹899</span> <b>Portronics</b> <span>Clamp M2 Car Mobile Holder 360 Rotational</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-portronics-toad-103-2505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/14-1779800208.png" /> <strong>₹123</strong><span class="amount">₹499</span> <b>Portronics</b> <span>Toad 103 USB Mouse</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-smart-t10mini-handheld-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/15-1779800217.png" /> <strong>₹175</strong><span class="amount">₹999</span> <b>Zop</b> <span>T-10mini Handheld Table Fan: Blue</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-<div class="inner-content" id="electronics299">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-100w-charger-cable-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/2-1779800299.png" /> <strong>₹263</strong><span class="amount">₹1999</span> <b>Zop</b> <span>100W Charger Cable Fast Charging</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-zen-single-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-199-1780919375.png" /> <strong>₹154</strong><span class="amount">₹999</span> <b>Zop</b> <span>Buy Tecsox: Zen Single Wireless Earbud with Comfortable Fit Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="electronics_all">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-tecsox-pro-watch-1405"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779800331.png" /> <strong>₹331</strong><span class="amount">₹5999</span> <b>TecSox</b> <span>Pro Smart Watch Multi Sports Mode</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-bsc-flash-99-power-play-nxt-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/4-1779800334.png" /> <strong>₹461</strong><span class="amount">₹1000</span> <b>Power Play</b> <span>NXT Beard Trimmer</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-hammer-ultra-pods-0305"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779800351.png" /> <strong>₹422</strong><span class="amount">₹3499</span> <b>Hammer</b> <span>Ultra Pods TWS Earbuds with 3D Stereo Sound &amp; Touch Controls: Black</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-hammer-cyclone-round-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-1-1780919516.png" /> <strong>₹879</strong><span class="amount">₹4999</span> <b>Zop</b> <span>Cyclone Round Dial Smart Watch with 1.39&rdquo; Display Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-tecsox-mini-bluetooth-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-2-1780919687.png" /> <strong>₹351</strong><span class="amount">₹1999</span> <b>Zop</b> <span>Mini Bluetooth Speaker 360 Crystal Clear Sound Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-zopin-p9-bluetooth-2705"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-3-1780919697.png" /> <strong>₹351</strong><span class="amount">₹999</span> <b>Zop</b> <span>P9 Bluetooth Headphones Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://PPS280-zop-flash-99-hammer-ultra-pods-2705"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/deal-799-4-1780919706.png" /> <strong>₹703</strong><span class="amount">₹3499</span> <b>Zop</b> <span>Ultra Pods TWS Earbuds with 3D Stereo Sound &amp; Touch Controls Worth</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-</div>
-<!-- BEAUTY -->
-<div class="content" id="Beauty">
-<div class="inner-tabs">
-<div class="inner-tab active" data-inner="beauty99">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹99</h3>
-</div>
-<div class="inner-tab" data-inner="beauty199">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹199</h3>
-</div>
-<div class="inner-tab" data-inner="beauty299">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹299</h3>
-</div>
-<div class="inner-tab" data-inner="beauty_all">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹799</h3>
-</div>
-</div>
-<div class="inner-content active" id="beauty99">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-hamaramall-manicure-pedicure-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779794694.png" /> <strong>₹50</strong><span class="amount">₹399</span> <b>Salon</b> <span>Nail Clippers and Cleaner Care Tool Set</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-untam3d-co-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779794735.png" /> <strong>₹93</strong><span class="amount">₹1980</span> <b>UNTAM3D</b> <span>Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++: 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-sunscreen-spf-50-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/9-1779794761.png" /> <strong>₹87</strong><span class="amount">₹349</span> <b>Zop</b> <span>Sunscreen SPF 50 Broad Spectrum PA+++ with UV Protection</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-bombay-shaving-company-2005"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/12-1779794789.png" /> <strong>₹66</strong><span class="amount">₹75</span> <b>Bombay Shaving Company</b> <span>Charcoal Face Wash: 15g</span> <b class="pack-value">15g</b> <button>Buy now</button> </a></div>
-<div class="more-cards">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-nisha-beard-colour-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/13-1779794811.png" /> <strong>₹59</strong><span class="amount">₹249</span> <b>Nisha</b> <span>Beard Colour Black: 120gm</span> <b class="pack-value">120gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jasmine-blossom-bathing-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/14-1779794826.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>Jasmine Blossom Bathing Soap 125 G</span> <b class="pack-value">125g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-oudwood-bathing-soap-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/15-1779794834.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Zop</b> <span>Oudwood Bathing Soap</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-lavenour-dtan-charcoal-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/16-1779794845.png" /> <strong>₹87</strong><span class="amount">₹249</span> <b>Lavenour</b> <span>D-Tan Charcoal Face Wash: 100ml</span> <b class="pack-value">100ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-spf-50-sunscreen-1505"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/17-1779794856.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Zop</b> <span>SPF 50 Sunscreen Matte Lightweight Non-Greasy Zero White Cast 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-sanfe-zero-sweat-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/25-1779794957.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Sanfe</b> <span>Zero Sweat Underarm Lightening Roll-On: 50ml</span> <b class="pack-value">50ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-freshluxe-aqua-essence-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/26-1779794969.png" /> <strong>₹87</strong><span class="amount">₹349</span> <b>FreshLuxe</b> <span>Aqua Essence Shower Gel: 200ml</span> <b class="pack-value">200ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-denver-vip-rush-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/27-1779794984.png" /> <strong>₹67</strong><span class="amount">₹249</span> <b>DENVER</b> <span>VIP Rush Spray Perfume Eau de Parfum: 30ml</span> <b class="pack-value">30ml</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-rice-water-face-0605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/28-1779794994.png" /> <strong>₹87</strong><span class="amount">₹249</span> <b>Zop</b> <span>Rice Water Face Wash</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-color-cupid-love-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/31-1779795030.png" /> <strong>₹59</strong><span class="amount">₹299</span> <b>Color Cupid</b> <span>Love Glow BB Cream SPF 15: 30g</span> <b class="pack-value">30g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-deodap-1462b-bath-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/35-1779795088.png" /> <strong>₹87</strong><span class="amount">₹99</span> <b>DeoDap</b> <span>Bath Sponge Round Loofah and Back Scrubber</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-charcoal-shaving-foam-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/36-1779795102.png" /> <strong>₹84</strong><span class="amount">₹95</span> <b>Zop</b> <span>Charcoal Shaving Foam: 50g</span> <b class="pack-value">50g</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inliefs-lip-balm-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/37-1779795115.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Inliefs</b> <span>Lip Balm: 15gm</span> <b class="pack-value">15gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inlief-face-wash-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/38-1779795126.png" /> <strong>₹78</strong><span class="amount">₹349</span> <b>Inlief</b> <span>Face Wash</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jade-roller-gua-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/40-1779795149.png" /> <strong>₹87</strong><span class="amount">₹499</span> <b>Zop</b> <span>Jade Roller Gua Sha Combo</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-inlief-sheet-mask-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/41-1779795170.png" /> <strong>₹87</strong><span class="amount">₹318</span> <b>Inlief</b> <span>Sheet Mask Pack of 2: Niacinamide &amp; Salicylic Acid</span> <b class="pack-value">Pack of 2</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-espresso-body-wash-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/43-1779795189.png" /> <strong>₹87</strong><span class="amount">₹299</span> <b>Zop</b> <span>Espresso Body Wash Caffeine Moisturizing: 225ml</span> <b class="pack-value">225ml</b> <button>Buy now</button> </a></div>
-</div>
-<button class="see-all-btn">See All</button></div>
-<div class="inner-content" id="beauty199">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-sanfe-flash-99-exfloiting-gel-1905"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/6-1779800126.png" /> <strong>₹147</strong><span class="amount">₹399</span> <b>Sanfe</b> <span>Instant Tan &amp; Dead Skin Exfoliating Gel</span> <b class="pack-value">100gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-conscious-chemist-sun-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/18-1779800250.png" /> <strong>₹140</strong><span class="amount">₹599</span> <b>Conscious Chemist</b> <span>Sun Drink Oil-Free Sunscreen</span> <b class="pack-value">50gm</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-hair-removal-cream-0205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/21-1779800281.png" /> <strong>₹128</strong><span class="amount">₹149</span> <b>Zop</b> <span>Hair Removal Cream for Dry &amp; Sensitive Skin</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="beauty299">
-<p>No deal Avialable</p>
-</div>
-<div class="inner-content" id="beauty_all">
-<p>No deal Avialable</p>
-</div>
-</div>
-<!-- Fashion -->
-<div class="content" id="Fashion">
-<div class="inner-tabs">
-<div class="inner-tab active" data-inner="fashion99">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹99</h3>
-</div>
-<div class="inner-tab" data-inner="fashion199">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹199</h3>
-</div>
-<div class="inner-tab" data-inner="fashion299">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹299</h3>
-</div>
-<div class="inner-tab" data-inner="fashion_all">
-<div class="discount-icon">%</div>
-<p>UNDER</p>
-<h3>₹799</h3>
-</div>
-</div>
-<div class="inner-content active" id="fashion99">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-xpop-ultra-soft-1805"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/29-1779795007.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>X-POP</b> <span>Ultra Soft Trunk: Black Solid</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-kimti-white-pearl-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/44-1779857289.png" /> <strong>₹87</strong><span class="amount">₹490</span> <b>Kimti</b> <span>White Pearl Studs Earring </span> <b class="pack-value"> 1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-creature-formal-casual-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/45-1779857293.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>Creature</b> <span>Formal Casual Black Color Genuine Belts</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-xpop-ultra-soft-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/46-1779857310.png" /> <strong>₹87</strong><span class="amount">₹199</span> <b>X-Pop</b> <span>Ultra Soft Trunk: Black Solid</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="fashion199">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-jewellery-organiser-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/22-1779857427.png" /> <strong>₹175</strong><span class="amount">₹1000</span> <b>Kimti</b> <span>Jewellery Organiser</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="fashion299">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-mens-textured-sleeveless-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/3-1779857431.png" /> <strong>₹263</strong><span class="amount">₹1999</span> <b>Starvy</b> <span>Men's Textured Sleeveless T-Shirt</span> <b class="pack-value">Pack of 2</b> <button>Buy now</button> </a></div>
-</div>
-<div class="inner-content" id="fashion_all">
-<div class="deal-card"><a href="cashkaro://deals/PPS280-hamara-mall-flash-99-waterproof-backpack-2205"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/1-1779800316.png" /> <strong>₹303</strong><span class="amount">₹1999</span> <b>Waterproof Backpack</b> <span>Anti-Theft Sling &amp; Backpack</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-beyoung-plain-sage-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/7-1779857551.png" /> <strong>₹307</strong><span class="amount">₹599</span> <b>BeYoung</b> <span>Plain Sage Green Mens Boxer</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-navy-white-black-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/8-1779857555.png" /> <strong>₹439</strong><span class="amount">₹1299</span> <b>Heganwalk</b> <span>Navy White Black 3 Pack Short Sleeve T-Shirts</span> <b class="pack-value">Pack of 3</b> <button>Buy now</button> </a></div>
-<div class="deal-card"><a href="cashkaro://deals/PPS280-zop-flash-99-beyoung-army-green-2605"> <img src="https://asset22.ckassets.com/resources/image/staticpage_images/9-1779857568.png" /> <strong>₹703</strong><span class="amount">₹1598</span> <b>BeYoung</b> <span>Army Green Cotton Cargo Joggers</span> <b class="pack-value">1 Unit</b> <button>Buy now</button> </a></div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-sec"><img src="https://asset22.ckassets.com/resources/image/staticpage_images/footer-1779781981.png" /></div>
+
 <script>
+const EDGE_LIVE='https://bdztgellimsbglxiuwcq.supabase.co/functions/v1/get-live-deals';
+let DH_ALL=[],DH_TIMER=12,DH_ROT_MS=2000,DH_CAT_ORDER=[];
+let DH_TRACKING_TPL='{linkurl}&source=TEST{random10}&p5={userid}&url={product_url}';
+const DH_FIXED_UID='17861557';
+let dhActiveCat='all',dhActiveSort='order',dhSelectedBrands=new Set();
+let dhPriceMin=null,dhPriceMax=null,dhSearchQuery='';
+let dhAllIntervals=[];
+let dhPendingId=null;
 
-/* MAIN CATEGORY TABS */
+const dhFmt=n=>Number(n||0).toLocaleString('en-IN');
 
-document.querySelectorAll(".tab").forEach(tab => {
-
-  tab.addEventListener("click", function () {
-
-    document.querySelectorAll(".tab").forEach(t => {
-      t.classList.remove("active");
-    });
-
-    document.querySelectorAll(".content").forEach(c => {
-      c.classList.remove("active");
-    });
-
-    this.classList.add("active");
-
-    document
-      .getElementById(this.dataset.tab)
-      .classList.add("active");
-
-  });
-
-});
-
-
-/* INNER PRICE TABS */
-
-document.querySelectorAll(".content").forEach(section => {
-
-  section.querySelectorAll(".inner-tab").forEach(tab => {
-
-    tab.addEventListener("click", function () {
-
-      section.querySelectorAll(".inner-tab").forEach(t => {
-        t.classList.remove("active");
-      });
-
-      section.querySelectorAll(".inner-content").forEach(c => {
-        c.classList.remove("active");
-      });
-
-      this.classList.add("active");
-
-      section
-        .querySelector("#" + this.dataset.inner)
-        .classList.add("active");
-
-    });
-
-  });
-
-});
-
-</script>
-<script>
-document.querySelectorAll(".see-all-btn").forEach(button => {
-
-  button.addEventListener("click", function () {
-
-    const parent = this.closest(".inner-content");
-    const moreCards = parent.querySelector(".more-cards");
-
-    if (moreCards.style.display === "block") {
-      moreCards.style.display = "none";
-      this.innerText = "See All";
-    } else {
-      moreCards.style.display = "block";
-      this.innerText = "Show Less";
-    }
-
-  });
-
-});
-</script>
-<script>
-window.addEventListener("load", function () {
-
-  const ekTimerBox = document.querySelector(".offer-timer");
-
-  if (!ekTimerBox) return;
-
-  // =========================
-  // SET DAILY START TIME HERE
-  // =========================
-
-  const startHour = 12; // 12 PM
-  const startMinute = 0;
-
-  // 24 HOURS
-  const ekDuration = 24 * 60 * 60 * 1000;
-
-  function ekUpdateTimer() {
-
-    const now = new Date();
-
-    // Today's start time
-    let ekStartTime = new Date();
-
-    ekStartTime.setHours(startHour, startMinute, 0, 0);
-
-    // If current time is before today's start,
-    // use yesterday's start
-    if (now < ekStartTime) {
-      ekStartTime.setDate(ekStartTime.getDate() - 1);
-    }
-
-    const ekPassed = now - ekStartTime;
-
-    const ekRemaining = ekDuration - ekPassed;
-
-    const h = Math.floor(ekRemaining / (1000 * 60 * 60));
-    const m = Math.floor((ekRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((ekRemaining % (1000 * 60)) / 1000);
-
-    ekTimerBox.textContent =
-      String(h).padStart(2, "0") + ":" +
-      String(m).padStart(2, "0") + ":" +
-      String(s).padStart(2, "0");
-  }
-
-  ekUpdateTimer();
-
-  setInterval(ekUpdateTimer, 1000);
-
-});
-</script>
-<script>
-
-const input = document.getElementById("searchInput");
-const noResult = document.getElementById("noResult");
-
-const words = [
-    "sunscreen",
-    "earphone",
-    "charger"
-];
-
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-/* =========================
-   Typing Effect
-========================= */
-
-function typeEffect(){
-
-    if(document.activeElement === input || input.value.length > 0){
-        return;
-    }
-
-    let currentWord = words[wordIndex];
-
-    if(isDeleting){
-        charIndex--;
-    } else {
-        charIndex++;
-    }
-
-    input.placeholder =
-        "Search for " +
-        currentWord.substring(0, charIndex);
-
-    if(!isDeleting && charIndex === currentWord.length){
-
-        isDeleting = true;
-
-        setTimeout(typeEffect, 1000);
-        return;
-    }
-
-    if(isDeleting && charIndex === 0){
-
-        isDeleting = false;
-
-        wordIndex++;
-
-        if(wordIndex === words.length){
-            wordIndex = 0;
-        }
-    }
-
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+function dhParseArr(v){
+  if(!v)return[];
+  if(Array.isArray(v))return v;
+  try{const p=JSON.parse(v);return Array.isArray(p)?p:[];}catch(e){return[];}
 }
 
-typeEffect();
+function dhGetImages(deal){
+  const urls=dhParseArr(deal.image_urls);
+  const order=dhParseArr(deal.image_order);
+  const hidden=dhParseArr(deal.hidden_images);
+  const idx=order.length>0?order:urls.map((_,i)=>i);
+  return idx.filter(i=>!hidden.includes(i)&&urls[i]).map(i=>urls[i]);
+}
 
-/* =========================
-   Search Function
-========================= */
+function dhViewingCount(id){
+  let h=0;for(let i=0;i<(id||'').length;i++)h=(h*31+id.charCodeAt(i))&0xfffffff;
+  return 12+(h%180)+Math.floor(Math.random()*6);
+}
 
-input.addEventListener("input", function(){
+function dhTimeLeft(hours,withSecs){
+  const h=hours||DH_TIMER||12;
+  const now=new Date(),ds=new Date(now);ds.setHours(0,0,0,0);
+  const msLeft=(h*3600000)-((now-ds)%(h*3600000));
+  const hL=Math.floor(msLeft/3600000),mL=Math.floor((msLeft%3600000)/60000),sL=Math.floor((msLeft%60000)/1000);
+  return withSecs?`${String(hL).padStart(2,'0')}:${String(mL).padStart(2,'0')}:${String(sL).padStart(2,'0')}`:`${hL}h ${mL}m`;
+}
 
-    let value = this.value.toLowerCase();
+function dhBuildTrackingUrl(linkurl,productUrl){
+  const r=Math.floor(1000000000+Math.random()*9000000000).toString();
+  return DH_TRACKING_TPL.replace('{linkurl}',linkurl||'#').replace('{random10}',r).replace('{userid}',DH_FIXED_UID).replace('{product_url}',encodeURIComponent(productUrl||''));
+}
 
-    let dealCards = document.querySelectorAll(".deal-card");
+/* ── FETCH ── */
+async function dhFetch(){
+  const res=await fetch(EDGE_LIVE);
+  const data=await res.json();
+  DH_TIMER=data.global_timer_hours||12;
+  DH_ROT_MS=data.image_rotation_ms||2000;
+  DH_CAT_ORDER=data.category_order||[];
+  if(data.tracking_template)DH_TRACKING_TPL=data.tracking_template;
+  const mobileCols=parseInt(data.mobile_grid_cols)||2;
+  document.documentElement.style.setProperty('--mobile-cols',mobileCols);
+  DH_ALL=(data.deals||[]).filter(d=>d.status==='live'&&d.hidden!==true).map(d=>({
+    ...d,
+    image_urls:dhParseArr(d.image_urls),
+    image_order:dhParseArr(d.image_order),
+    hidden_images:dhParseArr(d.hidden_images),
+    retailer_rates:dhParseArr(d.retailer_rates)
+  }));
+}
 
-    let found = false;
+/* ── SIDEBAR ── */
+function dhBuildSidebar(){
+  const allCats=[...new Set(DH_ALL.map(d=>d.category).filter(Boolean))];
+  const orderedCats=[...DH_CAT_ORDER.filter(c=>allCats.includes(c)),...allCats.filter(c=>!DH_CAT_ORDER.includes(c)).sort()];
+  const bar=document.getElementById('dhCatBar');
+  bar.querySelectorAll('.dh-cat-pill:not([data-cat="all"])').forEach(p=>p.remove());
+  orderedCats.forEach(cat=>{
+    const p=document.createElement('div');
+    p.className='dh-cat-pill';p.dataset.cat=cat;p.textContent=cat;
+    p.onclick=()=>dhSetCat(cat);
+    bar.appendChild(p);
+  });
+  dhRenderBrandList('');
+  document.getElementById('dhBrandSearch').addEventListener('input',function(){dhRenderBrandList(this.value.trim().toLowerCase());});
+}
 
-    dealCards.forEach(function(card){
+function dhGetBrandCounts(){
+  const c={};DH_ALL.forEach(d=>{if(d.report_storename)c[d.report_storename]=(c[d.report_storename]||0)+1;});return c;
+}
 
-        let spans = card.querySelectorAll("span");
+function dhRenderBrandList(query){
+  const counts=dhGetBrandCounts();
+  const brands=Object.entries(counts).filter(([b])=>!query||b.toLowerCase().includes(query)).sort((a,b)=>b[1]-a[1]);
+  const el=document.getElementById('dhBrandList');el.innerHTML='';
+  brands.forEach(([brand,count])=>{
+    const item=document.createElement('div');item.className='dh-brand-item';
+    const checked=dhSelectedBrands.has(brand);
+    item.innerHTML=`<div class="dh-brand-cb${checked?' checked':''}">${checked?'✓':''}</div><span class="dh-brand-name">${brand}</span><span class="dh-brand-count">${count}</span>`;
+    item.onclick=()=>dhToggleBrand(brand);
+    el.appendChild(item);
+  });
+}
 
-        let productText = "";
+function dhToggleBrand(brand){
+  if(dhSelectedBrands.has(brand))dhSelectedBrands.delete(brand);else dhSelectedBrands.add(brand);
+  document.getElementById('dhClearBrands').style.display=dhSelectedBrands.size>0?'block':'none';
+  dhRenderBrandList(document.getElementById('dhBrandSearch').value.trim().toLowerCase());
+  dhRenderDeals();
+}
+function dhClearBrands(){
+  dhSelectedBrands.clear();
+  document.getElementById('dhClearBrands').style.display='none';
+  dhRenderBrandList('');dhRenderDeals();
+}
+function dhSetCat(cat){
+  dhActiveCat=cat;
+  document.querySelectorAll('.dh-cat-pill').forEach(p=>p.classList.toggle('active',p.dataset.cat===cat));
+  dhRenderDeals();
+}
+function dhSetSort(sort){
+  dhActiveSort=sort;
+  document.querySelectorAll('.dh-sort-pill').forEach(p=>p.classList.toggle('active',p.dataset.sort===sort));
+  dhRenderDeals();
+}
 
-        if(spans.length > 1){
-            productText = spans[1].innerText.toLowerCase();
-        }
+/* ── FILTER + SORT ── */
+function dhGetFiltered(){
+  let deals=[...DH_ALL];
+  if(dhActiveCat!=='all')deals=deals.filter(d=>d.category===dhActiveCat);
+  if(dhSelectedBrands.size>0)deals=deals.filter(d=>dhSelectedBrands.has(d.report_storename));
+  if(dhPriceMin)deals=deals.filter(d=>d.final_deal_price>=dhPriceMin);
+  if(dhPriceMax)deals=deals.filter(d=>d.final_deal_price<=dhPriceMax);
+  if(dhSearchQuery){const q=dhSearchQuery.toLowerCase();deals=deals.filter(d=>(d.product_name||'').toLowerCase().includes(q)||(d.category||'').toLowerCase().includes(q)||(d.report_storename||'').toLowerCase().includes(q));}
+  if(dhActiveSort==='discount')deals.sort((a,b)=>b.discount_percent-a.discount_percent);
+  else if(dhActiveSort==='price_asc')deals.sort((a,b)=>a.final_deal_price-b.final_deal_price);
+  else if(dhActiveSort==='price_desc')deals.sort((a,b)=>b.final_deal_price-a.final_deal_price);
+  else if(dhActiveSort==='newest')deals.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));
+  else deals.sort((a,b)=>(a.deal_order||999)-(b.deal_order||999));
+  return deals;
+}
 
-        const moreCardsParent = card.closest(".more-cards");
+/* ── RENDER DEALS ── */
+function dhRenderDeals(){
+  dhAllIntervals.forEach(clearInterval);dhAllIntervals=[];
+  const deals=dhGetFiltered();
+  const el=document.getElementById('dhContent');el.innerHTML='';
+  const header=document.getElementById('dhResultsHeader');
+  const countEl=document.getElementById('dhResultsCount');
+  if(deals.length>0){
+    header.style.display='flex';
+    const bStr=dhSelectedBrands.size>0?` · ${[...dhSelectedBrands].join(', ')}`:'' ;
+    const cStr=dhActiveCat!=='all'?` in ${dhActiveCat}`:'';
+    countEl.innerHTML=`<strong>${deals.length}</strong> deal${deals.length!==1?'s':''}${cStr}${bStr}`;
+  }else{header.style.display='none';}
+  if(!deals.length){
+    el.innerHTML='<div class="dh-empty"><div class="dh-empty-icon">🔍</div><div class="dh-empty-title">No deals found</div><div>Try adjusting your filters</div></div>';
+    return;
+  }
+  deals.forEach(deal=>el.appendChild(dhMakeCard(deal)));
+}
 
-        if(productText.includes(value)){
+function dhMakeCard(deal,small){
+  const card=document.createElement('div');
+  card.className='dh-deal-card'+((!deal.availability)?' oos':'');
+  if(small)card.style.fontSize='12px';
+  const imgs=dhGetImages(deal);
+  const disc=Math.round(deal.discount_percent||0);
+  const store=deal.ck_admin_stores||deal;
+  const isRewards=(store.store_type||'')==='Rewards';
+  const vc=dhViewingCount(deal.id);
+  const finalPrice=Math.round(deal.final_deal_price||0);
+  const mrp=Math.round(deal.mrp||0);
+  const priceDrop=deal.price_dropped===true;
+  let imgHtml=imgs[0]
+    ?`<img class="dh-card-img" src="${imgs[0]}" loading="lazy" alt="${(deal.product_name||'').replace(/"/g,'')}" onerror="this.style.display='none'">`
+    :`<div class="dh-card-placeholder">🛍</div>`;
+  card.innerHTML=`
+    <div class="dh-card-img-wrap">
+      ${imgHtml}
+      ${disc>0?`<div class="dh-card-disc-badge">${disc}% OFF</div>`:''}
+      ${priceDrop?`<div class="dh-price-drop-ribbon">🔥 Price Drop</div>`:''}
+      ${!deal.availability?'<div class="dh-card-oos-overlay">Out of Stock</div>':''}
+      <div class="dh-card-viewing"><span class="dh-card-viewing-dot"></span><span>${vc} viewing</span></div>
+    </div>
+    <div class="dh-card-body">
+      <div class="dh-card-retailer">${deal.report_storename||''}</div>
+      <div class="dh-card-name">${deal.product_name||''}</div>
+      <div class="dh-card-prices">
+        <span class="dh-card-mrp">₹${dhFmt(mrp)}</span>
+        <span class="dh-card-price">₹${dhFmt(finalPrice)}</span>
+      </div>
+      <div class="dh-card-footer">
+        <div class="dh-card-timer"><span class="dh-card-timer-text">--:--:--</span></div>
+        <span class="dh-type-badge ${isRewards?'dh-badge-rewards':'dh-badge-cashback'}">${isRewards?'Rewards':'Cashback'}</span>
+      </div>
+    </div>`;
+  const timerEl=card.querySelector('.dh-card-timer-text');
+  const updT=()=>{if(timerEl)timerEl.textContent=dhTimeLeft(deal.timer_hours,true);};
+  updT();const tiv=setInterval(updT,1000);dhAllIntervals.push(tiv);
+  card.onclick=()=>dhShowDetail(deal.id);
+  return card;
+}
 
-            card.style.display = "block";
+/* ── SKELETONS ── */
+function dhShowSkeletons(){
+  document.getElementById('dhSkeletons').innerHTML=Array(8).fill(0).map(()=>`<div class="dh-skel-card"><div class="dh-skel-img"></div><div class="dh-skel-body"><div class="dh-skel-line" style="width:45%;height:8px"></div><div class="dh-skel-line" style="width:90%"></div><div class="dh-skel-line" style="width:60%"></div></div></div>`).join('');
+}
+function dhHideSkeletons(){document.getElementById('dhSkeletons').innerHTML='';}
 
-            // SHOW hidden section automatically
-            if(moreCardsParent){
-
-                moreCardsParent.style.display = "block";
-
-                // Change button text
-                const btn =
-                  moreCardsParent.parentElement.querySelector(".see-all-btn");
-
-                if(btn){
-                    btn.innerText = "Show Less";
-                }
-            }
-
-            found = true;
-
-        } else {
-
-            card.style.display = "none";
-
-        }
-
-    });
-
-    /* =========================
-       Show / Hide See All Button
-    ========================= */
-
-    document.querySelectorAll(".inner-content").forEach(section => {
-
-        const visibleCards = Array.from(
-            section.querySelectorAll(".deal-card")
-        ).filter(card =>
-            card.style.display !== "none"
-        ).length;
-
-        const seeAllBtn = section.querySelector(".see-all-btn");
-
-        if(seeAllBtn){
-
-            if(visibleCards > 4){
-
-                seeAllBtn.style.display = "block";
-
-            } else {
-
-                seeAllBtn.style.display = "none";
-
-            }
-
-        }
-
-    });
-
-    /* =========================
-       Reset Layout When Empty
-    ========================= */
-
-    if(value === ""){
-
-        document.querySelectorAll(".deal-card").forEach(card => {
-            card.style.display = "block";
-        });
-
-        document.querySelectorAll(".more-cards").forEach(box => {
-            box.style.display = "none";
-        });
-
-        document.querySelectorAll(".see-all-btn").forEach(btn => {
-
-            btn.innerText = "See All";
-            btn.style.display = "block";
-
-        });
-
-    }
-
-    /* =========================
-       No Result
-    ========================= */
-
-    if(found || value === ""){
-        noResult.style.display = "none";
-    } else {
-        noResult.style.display = "block";
-    }
-
+/* ── SEARCH ── */
+let dhSearchTimeout;
+document.getElementById('dhSearch').addEventListener('input',function(){
+  clearTimeout(dhSearchTimeout);
+  const q=this.value.trim();
+  if(q.length>1){dhShowSuggestions(q);dhSearchTimeout=setTimeout(()=>{dhSearchQuery=q;dhRenderDeals();},200);}
+  else{document.getElementById('dhSuggestions').style.display='none';dhSearchQuery='';dhRenderDeals();}
 });
+document.addEventListener('click',e=>{if(!e.target.closest('.dh-search-wrap'))document.getElementById('dhSuggestions').style.display='none';});
 
+function dhShowSuggestions(q){
+  const ql=q.toLowerCase();
+  const matches=DH_ALL.filter(d=>(d.product_name||'').toLowerCase().includes(ql)||(d.category||'').toLowerCase().includes(ql)).sort((a,b)=>(a.deal_order||999)-(b.deal_order||999)).slice(0,3);
+  const el=document.getElementById('dhSuggestions');
+  if(!matches.length){el.style.display='none';return;}
+  el.innerHTML=matches.map(d=>{
+    const imgs=dhGetImages(d);
+    return `<div class="dh-sug-item" onclick="dhShowDetail('${d.id}')">
+      <div class="dh-sug-img-wrap">${imgs[0]?`<img class="dh-sug-img" src="${imgs[0]}" onerror="this.style.display='none'">`:'🛍'}</div>
+      <div class="dh-sug-info"><div class="dh-sug-name">${d.product_name||''}</div><div class="dh-sug-price">${d.report_storename} · ₹${dhFmt(d.final_deal_price)}</div></div>
+      <span class="dh-sug-badge">${Math.round(d.discount_percent||0)}% OFF</span></div>`;
+  }).join('');
+  el.style.display='block';
+}
+
+document.getElementById('dhPriceMin').oninput=function(){dhPriceMin=this.value?Number(this.value):null;dhRenderDeals();};
+document.getElementById('dhPriceMax').oninput=function(){dhPriceMax=this.value?Number(this.value):null;dhRenderDeals();};
+
+/* ── DETAIL PAGE ── */
+function dhShowDetail(dealId){
+  const deal=DH_ALL.find(d=>d.id===dealId);
+  if(!deal)return;
+  window.location.hash='deal/'+dealId;
+  window.scrollTo(0,0);
+  dhRenderDetail(deal);
+  document.getElementById('dhListingPage').style.display='none';
+  document.getElementById('dhDetailPage').style.display='block';
+  const fcta=document.getElementById('dhFloatingCta');
+  if(fcta&&window.innerWidth<=900)fcta.style.display='block';
+}
+function dhShowListing(){
+  window.location.hash='';
+  dhAllIntervals.forEach(clearInterval);dhAllIntervals=[];
+  document.getElementById('dhFloatingCta').style.display='none';
+  document.getElementById('dhDetailPage').style.display='none';
+  document.getElementById('dhListingPage').style.display='block';
+}
+
+function dhRenderDetail(deal){
+  dhAllIntervals.forEach(clearInterval);dhAllIntervals=[];
+  const imgs=dhGetImages(deal);
+  const store=deal.ck_admin_stores||deal;
+  const rates=dhParseArr(deal.retailer_rates);
+  const isRewards=(store.store_type||'')==='Rewards';
+  const vc=dhViewingCount(deal.id);
+  const groupid=store.groupid||deal.groupid||'A';
+  const isB1=groupid==='B1';
+  const cbType=store.cashback_type==='percent'?'%':'₹';
+  const cbWord=isRewards?'Rewards':'Cashback';
+  let cb;
+  if(isB1){cb=deal.b1_new_cashback??deal.cashback_override??store.cashback??0;}
+  else if(groupid!=='A'){cb=deal.cashback_override??0;}
+  else{cb=store.cashback??0;}
+  const existingCb=isB1?(deal.b1_existing_cashback??null):null;
+
+  /* GALLERY */
+  const galleryEl=document.getElementById('dhGallery');
+  let imgIdx=0,autoRotate,galleryHovered=false;
+  const thumbsHtml=imgs.map((url,i)=>`<div class="dh-thumb${i===0?' active':''}" data-idx="${i}"><img src="${url}" loading="lazy" onerror="this.style.display='none'"></div>`).join('');
+  galleryEl.innerHTML=`
+    <div class="dh-gallery-main" id="dhGMain">
+      ${imgs[0]?`<img id="dhGImg" src="${imgs[0]}" alt="${(deal.product_name||'').replace(/"/g,'')}" onerror="this.src=''">`:'<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px">🛍</div>'}
+      <div class="dh-gallery-count" id="dhGCount">${imgs.length>1?'1/'+imgs.length:''}</div>
+      <div class="dh-gallery-viewing"><span class="dh-gallery-dot"></span>${vc} viewing</div>
+    </div>
+    <div class="dh-thumbs" id="dhThumbs">${thumbsHtml}</div>`;
+
+  function dhGoImg(i){
+    imgIdx=i;
+    const g=document.getElementById('dhGImg');
+    if(g){g.classList.add('dh-fade');setTimeout(()=>{g.src=imgs[i];g.classList.remove('dh-fade');},250);}
+    document.getElementById('dhGCount').textContent=imgs.length>1?(i+1)+'/'+imgs.length:'';
+    document.querySelectorAll('.dh-thumb').forEach(t=>t.classList.toggle('active',+t.dataset.idx===i));
+  }
+  document.getElementById('dhThumbs').addEventListener('click',e=>{
+    const t=e.target.closest('.dh-thumb');if(t){clearInterval(autoRotate);dhGoImg(+t.dataset.idx);}
+  });
+  document.getElementById('dhGMain').addEventListener('mouseenter',()=>galleryHovered=true);
+  document.getElementById('dhGMain').addEventListener('mouseleave',()=>galleryHovered=false);
+  if(imgs.length>1){autoRotate=setInterval(()=>{if(!galleryHovered)dhGoImg((imgIdx+1)%imgs.length);},DH_ROT_MS);dhAllIntervals.push(autoRotate);}
+
+  /* WATERFALL */
+  function dhCalcWf(cbVal){
+    const cd=deal.coupon_type==='percent'?(deal.discounted_price*(deal.coupon_discount/100)):(deal.coupon_discount||0);
+    const ac=deal.discounted_price-cd;
+    const pdAmt=deal.prepaid_type_override==='percent'?ac*((deal.prepaid_discount_override||0)/100):(deal.prepaid_discount_override||0);
+    const ap=ac-pdAmt;
+    const sf=deal.shipping_fee_override??store.shipping_fee??0;
+    const rule=deal.shipping_rule_override??store.shipping_rule??'yes';
+    const cbBase=rule==='yes'?ap+sf:ap;
+    const cbAmt=cbType==='%'?cbBase*(cbVal/100):cbVal;
+    const pAfterCb=cbBase-cbAmt;
+    const final=Math.round(rule==='no'?pAfterCb+sf:pAfterCb);
+    const discPct=deal.mrp>0?Math.round((deal.mrp-final)/deal.mrp*100):0;
+    return{cd,ac,pdAmt,ap,sf,rule,cbAmt,final,discPct,cbVal};
+  }
+  function dhBuildWfRows(w){
+    let r=`<div class="dh-wf-row dh-wf-s"><span>MRP</span><span class="dh-wv">₹${dhFmt(deal.mrp)}</span></div>
+<div class="dh-wf-row"><span>Discounted price</span><span class="dh-wv">₹${dhFmt(deal.discounted_price)}</span></div>`;
+    if(w.cd>0)r+=`<div class="dh-wf-row dh-wf-d"><span>Coupon (${deal.coupon_code||''})</span><span class="dh-wv">−₹${dhFmt(w.cd)}</span></div>`;
+    if(w.pdAmt>0)r+=`<div class="dh-wf-row dh-wf-d"><span>Prepaid discount</span><span class="dh-wv">−₹${dhFmt(w.pdAmt)}</span></div>`;
+    if(w.sf>0)r+=`<div class="dh-wf-row dh-wf-a"><span>+ Shipping</span><span class="dh-wv">₹${dhFmt(w.sf)}</span></div>`;
+    r+=`<div class="dh-wf-row dh-wf-d"><span>CashKaro ${w.cbVal}${cbType} ${cbWord}</span><span class="dh-wv">−₹${dhFmt(w.cbAmt)}</span></div>
+<span class="dh-wf-divider"></span>
+<div class="dh-wf-row dh-wf-tot"><span>Final deal price</span><span class="dh-wv">₹${dhFmt(w.final)}</span></div>
+<div class="dh-wf-row dh-wf-sv"><span>🎉 You save ${w.discPct}% vs MRP</span></div>`;
+    return r;
+  }
+
+  const wNew=dhCalcWf(cb);
+  const wExisting=isB1&&existingCb!==null?dhCalcWf(existingCb):null;
+  const disc=wNew.discPct;
+  const mrpR=Math.round(deal.mrp||0);
+  const finalR=Math.round(wNew.final);
+  const priceDrop=deal.price_dropped===true;
+  const storeType=store.store_type||'Cashback';
+  const trackingSpeed=store.tracking_speed||'—';
+  const confirmDays=store.expected_confirmation_days||'—';
+  const trackNum=String(trackingSpeed).match(/\d+/)?.[0]||trackingSpeed;
+  const trackUnit=String(trackingSpeed).replace(/\d+/,'').trim()||'';
+  const dealUrl=window.location.href;
+  const waMsg=encodeURIComponent(`🔥 Get ${deal.product_name} for just ₹${dhFmt(finalR)} (MRP ₹${dhFmt(mrpR)}) — ${disc}% off + ${cb}${cbType} CashKaro ${cbWord}. Grab it here: ${dealUrl}`);
+  const trackingUrl=dhBuildTrackingUrl(store.linkurl,deal.product_url);
+  const rawDesc=deal.description||'';
+  const cleanDesc=rawDesc.replace(/₹\s*[\d,]+(\.\d+)?/g,`₹${dhFmt(finalR)}`).replace(/\b\d+(\.\d+)?%\s*off\b/gi,`${disc}% off`);
+  const tc=(store.cashback_tc||'').replace(/<script[^>]*>[\s\S]*?<\/script>/gi,'');
+
+  /* B1 TABS */
+  const userTabsHtml=isB1&&wExisting?`<div class="dh-user-tabs" id="dhUserTabs">
+    <button class="dh-user-tab active" id="dhTabNu" onclick="dhSwitchUserTab('new')">🆕 New to ${deal.report_storename}<span class="dh-utab-small">₹${dhFmt(Math.round(wNew.final))}</span></button>
+    <button class="dh-user-tab" id="dhTabEu" onclick="dhSwitchUserTab('existing')">🔄 Existing User<span class="dh-utab-small">₹${dhFmt(Math.round(wExisting.final))}</span></button>
+  </div>`:'';
+
+  /* RATES */
+  let ratesHtml='';
+  if(rates.length){
+    ratesHtml=`<div style="margin-bottom:8px;font-size:12px;color:#9898aa;font-weight:600">Multiple rates:</div>
+<div class="dh-rates-head"><span class="dh-rates-col1">User type</span><span class="dh-rates-col2">Cashback</span></div>
+${rates.map(r=>`<div class="dh-rates-row"><span class="dh-rates-col1">${r.rate_label}</span><span class="dh-rates-col2">${r.cashback}${r.cashback_type==='percent'?'%':'₹'}</span></div>`).join('')}`;
+  }
+
+  document.getElementById('dhDetailInfo').innerHTML=`
+    <div class="dh-detail-retailer-row">
+      <span class="dh-detail-retailer">${deal.report_storename||''}</span>
+      <span class="dh-detail-cat-badge">${deal.category||''}</span>
+      <span class="dh-type-badge ${isRewards?'dh-badge-rewards':'dh-badge-cashback'}">${storeType}</span>
+      ${priceDrop?`<span style="background:#fef2f2;color:#e53e3e;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid #fecaca">🔥 Price Dropped</span>`:''}
+    </div>
+    <div class="dh-detail-name">${deal.product_name||''}</div>
+    <div class="dh-detail-viewing"><span class="dh-detail-viewing-dot"></span>${vc} people viewing</div>
+    ${userTabsHtml}
+    <div class="dh-price-block">
+      <div class="dh-price-row">
+        <span class="dh-detail-mrp">₹${dhFmt(mrpR)}</span>
+        <span class="dh-detail-price" id="dhDpFinal">₹${dhFmt(finalR)}</span>
+        <span class="dh-detail-disc-badge" id="dhDpDisc">${disc}% OFF</span>
+      </div>
+      <div class="dh-detail-timer">
+        <span class="dh-detail-timer-label">⏱ Deal ends in</span>
+        <span class="dh-detail-timer-val" id="dhDetailTimerVal">--:--:--</span>
+      </div>
+      <div class="dh-cb-line">+ Earn <strong>${cb}${cbType} ${cbWord}</strong> via CashKaro</div>
+      <div class="dh-wf-toggle" onclick="var b=document.getElementById('dhWfBody');b.classList.toggle('open');this.querySelector('span:last-child').textContent=b.classList.contains('open')?'▴':'▾'">
+        <span>💡 How is this price calculated?</span><span>▾</span>
+      </div>
+      <div class="dh-wf-body" id="dhWfBody">${dhBuildWfRows(wNew)}</div>
+    </div>
+    <div class="dh-inline-cta-wrap">
+      <a class="dh-cta-btn" id="dhInlineBtn" href="${trackingUrl}" target="_blank" rel="noopener">🛍 Shop Now &amp; Earn ${cb}${cbType} ${cbWord}</a>
+      <a class="dh-share-btn" href="https://wa.me/?text=${waMsg}" target="_blank" rel="noopener" style="margin-top:8px">💬 Share on WhatsApp</a>
+      <div class="dh-cta-sub">Cashback tracked via CashKaro. Must shop through this link.</div>
+    </div>
+    <div class="dh-tabs-wrap">
+      <div class="dh-tab-list">
+        <button class="dh-tab-btn active" onclick="dhSwitchTab(this,'dhTabAbout')">About</button>
+        <button class="dh-tab-btn" onclick="dhSwitchTab(this,'dhTabCbinfo')">${cbWord} Info</button>
+        <button class="dh-tab-btn" onclick="dhSwitchTab(this,'dhTabTerms')">T&amp;Cs</button>
+      </div>
+      <div class="dh-tab-content active" id="dhTabAbout">${cleanDesc?cleanDesc.replace(/\n/g,'<br>'):'<span style="color:#9898aa">Description coming soon.</span>'}</div>
+      <div class="dh-tab-content" id="dhTabCbinfo">
+        <div class="dh-cb-chips">
+          <div class="dh-cb-chip dh-green">
+            <div class="dh-cb-chip-label">${cbWord} tracks in</div>
+            <div class="dh-cb-chip-val">${trackNum}</div>
+            <div class="dh-cb-chip-unit">${trackUnit}</div>
+          </div>
+          <div class="dh-cb-chip dh-green">
+            <div class="dh-cb-chip-label">${cbWord} confirms in</div>
+            <div class="dh-cb-chip-val">${confirmDays}</div>
+            <div class="dh-cb-chip-unit">Days</div>
+          </div>
+          <div class="dh-cb-chip">
+            <div class="dh-cb-chip-label">Type</div>
+            <div class="dh-cb-chip-val" style="font-size:16px">${storeType}</div>
+            <div class="dh-cb-chip-unit">${isRewards?'Store Credits':'Real Cash'}</div>
+          </div>
+        </div>
+        ${ratesHtml}
+      </div>
+      <div class="dh-tab-content" id="dhTabTerms">${tc||'<span style="color:#9898aa">Standard CashKaro T&Cs apply.</span>'}</div>
+    </div>`;
+
+  /* FLOATING CTA */
+  const fb=document.getElementById('dhFloatingBtn');
+  if(fb){fb.href=trackingUrl;fb.textContent=`🛍 Shop Now & Earn ${cb}${cbType} ${cbWord}`;}
+
+  /* TIMER */
+  const updT=()=>{const el=document.getElementById('dhDetailTimerVal');if(el)el.textContent=dhTimeLeft(deal.timer_hours,true);else clearInterval(dtInt);};
+  updT();const dtInt=setInterval(updT,1000);dhAllIntervals.push(dtInt);
+
+  /* B1 USER TAB SWITCH */
+  window.dhSwitchUserTab=function(type){
+    document.getElementById('dhTabNu')?.classList.toggle('active',type==='new');
+    document.getElementById('dhTabEu')?.classList.toggle('active',type==='existing');
+    const w=type==='existing'&&wExisting?wExisting:wNew;
+    const cbV=type==='existing'&&existingCb!==null?existingCb:cb;
+    const url=dhBuildTrackingUrl(store.linkurl,deal.product_url);
+    const ctaTxt=`🛍 Shop Now & Earn ${cbV}${cbType} ${cbWord}`;
+    document.getElementById('dhDpFinal').textContent='₹'+dhFmt(Math.round(w.final));
+    document.getElementById('dhDpDisc').textContent=w.discPct+'% OFF';
+    document.getElementById('dhWfBody').innerHTML=dhBuildWfRows(w);
+    const ib=document.getElementById('dhInlineBtn');if(ib){ib.href=url;ib.textContent=ctaTxt;}
+    const flb=document.getElementById('dhFloatingBtn');if(flb){flb.href=url;flb.textContent=ctaTxt;}
+  };
+
+  /* SIMILAR */
+  document.getElementById('dhDetailInner').querySelector('.dh-similar-section')?.remove();
+  const similar=DH_ALL.filter(d=>d.id!==deal.id&&d.category===deal.category).slice(0,6);
+  if(similar.length>0){
+    const sec=document.createElement('div');sec.className='dh-similar-section';
+    sec.innerHTML=`<div class="dh-similar-title"><span style="display:inline-block;width:4px;height:20px;background:#5c2be2;border-radius:2px"></span>Deals you may like</div><div class="dh-similar-grid" id="dhSimGrid"></div>`;
+    document.getElementById('dhDetailInner').appendChild(sec);
+    similar.forEach(d=>sec.querySelector('#dhSimGrid').appendChild(dhMakeCard(d,true)));
+  }
+}
+
+function dhSwitchTab(btn,tabId){
+  btn.closest('.dh-tabs-wrap').querySelectorAll('.dh-tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.closest('.dh-tabs-wrap').querySelectorAll('.dh-tab-content').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+/* ── HASH ROUTING ── */
+function dhHandleHash(){
+  const hash=window.location.hash.slice(1);
+  if(hash.startsWith('deal/')){const id=hash.replace('deal/','');if(DH_ALL.length)dhShowDetail(id);else dhPendingId=id;}
+  else dhShowListing();
+}
+window.addEventListener('hashchange',dhHandleHash);
+
+/* ── BOOT ── */
+(async()=>{
+  dhShowSkeletons();
+  document.getElementById('dhListingPage').style.display='block';
+  try{await dhFetch();}catch(e){console.error('Failed to load deals',e);}
+  dhHideSkeletons();
+  dhBuildSidebar();
+  dhRenderDeals();
+  document.getElementById('dhLoader').style.display='none';
+  if(dhPendingId){dhShowDetail(dhPendingId);dhPendingId=null;}
+  else dhHandleHash();
+})();
 </script>
